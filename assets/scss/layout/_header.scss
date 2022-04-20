@@ -19,8 +19,24 @@
 			background-color: rgba(0, 0, 0, 0.7);
 		}
 	}
+	.navbar-toggler {
+		margin-right: 1rem;
+		padding: 0.25rem 0.25rem;
+		font-size: 1rem;
+		background-color: $color-dark-green;
+		color: white;
+	}
 	.navbar-content {
 		padding: 1rem;
+	}
+
+	.day {
+		position: absolute;
+		top: 31%;
+		right: 17%;
+		font-size: 1.8rem;
+		color: white;
+		cursor: pointer;
 	}
 }
 .fa-align-right {
@@ -31,57 +47,51 @@
 	font-size: 0.8rem;
 	color: rgba(255, 255, 255, 0.75);
 }
+
 .dropdown-menu {
 	border-radius: 10px;
 	position: relative;
 	background-color: var(--bg-color);
 	border: solid 1px rgba(255, 255, 255, 0.1);
-}
-.dropdown-menu::after {
-	content: '';
-	position: absolute;
-	width: 50px;
-	height: 50px;
-	top: -3px;
-	left: 25px;
-	background-color: var(--bg-color);
-	z-index: -1;
-	transform: rotate(45deg);
-}
-.dropdown-item {
-	padding: 0.5rem 3rem;
-	color: var(--text-link-color) !important;
-}
-.nav-link,
-.dropdown-item {
-	text-transform: uppercase;
-}
-.navbar-toggler {
-	margin-right: 1rem;
-	padding: 0.25rem 0.25rem;
-	font-size: 1rem;
-	background-color: $color-dark-green;
-	color: white;
-}
+	&::after {
+		content: '';
+		position: absolute;
+		width: 50px;
+		height: 50px;
+		top: -3px;
+		left: 25px;
+		background-color: var(--bg-color);
+		z-index: -1;
+		transform: rotate(45deg);
+	}
 
-.day {
-	position: absolute;
-	top: 31%;
-	right: 17%;
-	font-size: 1.8rem;
-	color: white;
-	cursor: pointer;
+	.dropdown-item {
+		padding: 0.5rem 3rem;
+		color: var(--text-link-color) !important;
+		&.active {
+			color: $color-dark-green !important;
+			background-color: unset;
+		}
+	}
+	.nav-link,
+	.dropdown-item {
+		text-transform: uppercase;
+	}
 }
 .fa-times {
 	display: none;
 }
-.close .fa-times {
-	display: block;
-	padding: 4px 8px;
+.close {
+	.fa-times {
+		display: block;
+		padding: 4px 8px;
+	}
+
+	.navbar-toggler-icon {
+		display: none;
+	}
 }
-.close .navbar-toggler-icon {
-	display: none;
-}
+
 #site-header.scroll {
 	background-color: var(--bg-color) !important;
 	.navbar {
@@ -123,11 +133,11 @@
 	cursor: pointer;
 	visibility: visible;
 	transition: all 0.5s;
-}
-.search .fa-search {
-	opacity: 1;
-	color: white;
-	transition: 0.3s;
+	.fa-search {
+		opacity: 1;
+		color: white;
+		transition: 0.3s;
+	}
 }
 
 /* create animation for search in header */

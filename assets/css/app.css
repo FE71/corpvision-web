@@ -290,8 +290,25 @@ html {
   background-color: rgba(0, 0, 0, 0.7);
 }
 
+.navbar .navbar-toggler {
+  margin-right: 1rem;
+  padding: 0.25rem 0.25rem;
+  font-size: 1rem;
+  background-color: #009f4d;
+  color: white;
+}
+
 .navbar .navbar-content {
   padding: 1rem;
+}
+
+.navbar .day {
+  position: absolute;
+  top: 31%;
+  right: 17%;
+  font-size: 1.8rem;
+  color: white;
+  cursor: pointer;
 }
 
 .fa-align-right {
@@ -324,31 +341,19 @@ html {
           transform: rotate(45deg);
 }
 
-.dropdown-item {
+.dropdown-menu .dropdown-item {
   padding: 0.5rem 3rem;
   color: var(--text-link-color) !important;
 }
 
-.nav-link,
-.dropdown-item {
+.dropdown-menu .dropdown-item.active {
+  color: #009f4d !important;
+  background-color: unset;
+}
+
+.dropdown-menu .nav-link,
+.dropdown-menu .dropdown-item {
   text-transform: uppercase;
-}
-
-.navbar-toggler {
-  margin-right: 1rem;
-  padding: 0.25rem 0.25rem;
-  font-size: 1rem;
-  background-color: #009f4d;
-  color: white;
-}
-
-.day {
-  position: absolute;
-  top: 31%;
-  right: 17%;
-  font-size: 1.8rem;
-  color: white;
-  cursor: pointer;
 }
 
 .fa-times {
