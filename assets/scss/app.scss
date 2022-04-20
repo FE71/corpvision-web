@@ -1,0 +1,30 @@
+// Abstract files
+@import 'abstracts/_mixins.scss';
+@import 'abstracts/_variables.scss';
+@import 'abstracts/_utilities.scss';
+
+// Core files
+@import 'core/_reset.scss';
+
+// Components
+@import 'components/_buttons.scss';
+@import 'components/_carousel.scss';
+@import 'components/_brand.scss';
+@import 'components/_texts.scss';
+
+// Layout
+@import 'layout/_header.scss';
+@import 'layout/_footer.scss';
+@import 'layout/_navigation.scss';
+@import 'layout/_sidebar.scss';
+
+// Sections
+@import 'sections/_cta.scss';
+@import 'sections/_hero.scss';
+
+// Pages
+@import 'pages/_home.scss';
+@import 'pages/_blog-posts.scss';
+
+// Vendors
+@import 'vendor/_lightgallery.scss';

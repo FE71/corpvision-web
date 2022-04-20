@@ -1,0 +1,9 @@
+@mixin progress-line($line-color, $circle-color) {
+	background: $line-color;
+	&::before {
+		border: solid 0.1px $circle-color;
+	}
+	&::after {
+		border: solid 0.1px $circle-color;
+	}
+}
