@@ -1,0 +1,13 @@
+/* color setup  */
+$text-font: #7e7d7d !global;
+$color-dark-green: #009f4d !global;
+$color-light-green: #28a745 !global;
+$color-cyan-blue: #61fded !global;
+$color-light-yellow: #eece90 !global;
+$color-medium-purple: #5c51ff !global;
+$color-medium-pink: #e5529a !global;
+
+$line-color-1: linear-gradient(-224deg, #0d8abc, $color-cyan-blue) !global;
+$line-color-2: linear-gradient(-224deg, #d45529, $color-light-yellow) !global;
+$line-color-3: linear-gradient(-224deg, #f646a9, $color-medium-purple) !global;
+$line-color-4: linear-gradient(-224deg, #e77654, $color-medium-pink) !global;

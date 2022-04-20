@@ -1,0 +1,46 @@
+/* edit for showcase using light gallery */
+.pagination-text {
+	color: $color-light-green;
+	font-size: 1.1rem;
+}
+.lg-outer.lg-show-after-load .lg-item.lg-complete .lg-object {
+	border: solid 5px white;
+	border-radius: 5px;
+}
+.lg-backdrop {
+	background-color: rgba(0, 0, 0, 0.8);
+}
+.lg-next {
+	right: 5%;
+}
+.lg-prev {
+	left: 5%;
+}
+.lg-next,
+.lg-prev {
+	height: 85%;
+	top: 9.5%;
+	background-color: transparent;
+	padding: 8px 50px 9px;
+}
+.lg-next:before {
+	content: '\f054';
+	font-family: FontAwesome;
+	font-weight: lighter;
+	font-size: 2.5rem;
+	opacity: 0;
+	transition: all 0.5s;
+}
+.lg-prev::after {
+	content: '\f053';
+	font-family: FontAwesome;
+	font-weight: lighter;
+	font-size: 2.5rem;
+	opacity: 0;
+	transition: all 0.5s;
+}
+.lg-next:hover::before,
+.lg-prev:hover::after {
+	opacity: 1;
+}
+/* edit done  */

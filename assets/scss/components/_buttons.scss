@@ -1,0 +1,39 @@
+.btn {
+	background-color: $color-light-green;
+	color: white;
+	font-weight: bold;
+	line-height: 35px;
+	height: 52px;
+	width: 170px;
+	border-radius: 8px;
+	transition: 0.5s;
+	&:hover {
+		color: white;
+		background-color: #1c7a32;
+	}
+}
+
+.goTop {
+	position: fixed;
+	height: 50px;
+	width: 50px;
+	background-color: $color-light-green;
+	border-radius: 50%;
+	color: white;
+	bottom: 20px;
+	right: 20px;
+	line-height: 50px;
+	text-align: center;
+	z-index: 10;
+	&:hover {
+		color: white;
+		background-color: $color-dark-green;
+	}
+}
+
+/* tablet responsive */
+@media (min-width: 767.98px) {
+	.btn {
+		width: 200px;
+	}
+}
