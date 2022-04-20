@@ -5,7 +5,7 @@ const $$ = document.querySelectorAll.bind(document);
 const moon = $('.far.fa-moon');
 const sun = $('.far.fa-sun');
 const day = $('.day.ms-3');
-var isMoon = true;
+var isLightTheme = true;
 
 // html elements
 const navbarToggler = $('.navbar-toggler');
@@ -29,14 +29,14 @@ window.onscroll = function () { showingHeader() };
 function showingHeader() {
     var isScroll = window.pageYOffset > sticky ? true : false;
     header.classList.toggle('scroll', isScroll);
-    goTopButton.classList.toggle('d-block', isScroll);
+    goTopButton.style.display = (isScroll) ? 'block' : 'none';
 }
 // done scroll to top even
 
 // start function to turn on/off dark mode 
 day.onclick = function () {
-    isMoon = !isMoon;
-    if (isMoon) {
+    isLightTheme = !isLightTheme;
+    if (isLightTheme) {
         sun.style.display = 'none';
         moon.style.display = 'block';
         $('html').setAttribute('data-theme', 'light')
