@@ -1,0 +1,32 @@
+.hero {
+	height: 250px;
+	background: linear-gradient(
+			0deg,
+			var(--overlay-color),
+			var(--overlay-color)
+		),
+		url(/assets/img/b1.jpg);
+	background-size: cover;
+	.hero-description {
+		color: #fff;
+		opacity: 0.7;
+	}
+}
+
+@media screen and (min-width: 575.98px) {
+	.hero {
+		height: 285px;
+	}
+}
+
+@media screen and (min-width: 767.98px) {
+	.hero {
+		height: 325px;
+	}
+}
+
+@media screen and (min-width: 991.98px) {
+	.hero {
+		height: 390px;
+	}
+}

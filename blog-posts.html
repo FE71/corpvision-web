@@ -1,239 +1,280 @@
-<!DOCTYPE html>
-<html lang="en">
-	<head>
-		<meta charset="UTF-8" />
-		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
-		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<!doctype html>
+<html lang="en" data-theme='light'>
 
-		<!-- Bootstrap v4.6.1 -->
-		<link
-			rel="stylesheet"
-			href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css"
-			integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn"
-			crossorigin="anonymous"
-		/>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-		<!-- font awesome cdn  -->
-		<link
-			rel="stylesheet"
-			href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
-			integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA=="
-			crossorigin="anonymous"
-			referrerpolicy="no-referrer"
-		/>
+	<!-- Bootstrap v4.6.1 -->
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+		integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
 
-		<!-- animate style cdn  -->
-		<link
-			rel="stylesheet"
-			href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
-		/>
+	<!-- Font Awesome CDN  -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+		integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA=="
+		crossorigin="anonymous" referrerpolicy="no-referrer" />
 
-		<!-- Google Font -->
-		<link rel="preconnect" href="https://fonts.googleapis.com" />
-		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-		<link
-			href="https://fonts.googleapis.com/css2?family=Jost:wght@300;400;600&display=swap"
-			rel="stylesheet"
-		/>
+	<!-- Light Gallery CDN -->
+	<link rel='stylesheet' href='https://cdn.jsdelivr.net/npm/lightgallery@2.1.3/css/lightgallery-bundle.min.css'>
+	<link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css'>
 
-		<!-- link to css file  -->
-		<link
-			rel="stylesheet"
-			media="screen"
-			type="text/css"
-			href="./assets/css/app.css"
-		/>
+	<!-- Animate Style CDN  -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
 
-		<title>Corpvision</title>
-	</head>
-	<body>
-		<!-- start fixed header  -->
-		<header class="fixed-top" id="site-header">
-			<div class="container-md p-0">
-				<nav class="navbar navbar-expand-lg navbar-dark">
-					<a class="navbar-brand" href="/">
-						<i class="fa fa-align-right"></i>
-						<span class="brand-name">Corp Vision</span>
-						<p>Vision to your Future</p>
-					</a>
-					<button
-						class="navbar-toggler"
-						type="button"
-						data-toggle="collapse"
-						data-target="#navbarScroll"
-						aria-controls="navbarScroll"
-						aria-expanded="false"
-						aria-label="Toggle navigation"
-					>
-						<span class="navbar-toggler-icon"></span>
-						<i class="fa fa-times"></i>
-					</button>
-					<div class="collapse navbar-collapse" id="navbarScroll">
-						<ul class="navbar-nav mx-lg-auto">
-							<li class="nav-item mx-auto active">
-								<a class="nav-link" href="/">Home</a>
-							</li>
-							<li class="nav-item mx-auto">
-								<a class="nav-link" href="#">About</a>
-							</li>
-							<li class="nav-item mx-auto">
-								<a class="nav-link" href="#">Services</a>
-							</li>
-							<li
-								class="nav-item container-fluid d-flex mx-auto flex-column dropdown"
-							>
-								<a
-									class="nav-link pr-0 text-right"
-									href="#"
-									id="navbarScrollingDropdown"
-									role="button"
-									data-toggle="dropdown"
-									aria-expanded="false"
-								>
-									Pages <i class="fa fa-angle-down"></i>
-								</a>
-								<ul
-									class="dropdown-menu text-center text-lg-left position-absolute"
-									aria-labelledby="navbarScrollingDropdown"
-								>
-									<li>
-										<a
-											class="dropdown-item nav-link pl-3"
-											href="#"
-											>Blog Posts</a
-										>
-									</li>
-									<li>
-										<a
-											class="dropdown-item nav-link pl-3"
-											href="#"
-											>404 page</a
-										>
-									</li>
-									<li>
-										<a
-											class="dropdown-item nav-link pl-3"
-											href="#"
-											>Landing page</a
-										>
-									</li>
-									<li>
-										<a
-											class="dropdown-item nav-link pl-3"
-											href="#"
-											>Elements page</a
-										>
-									</li>
-								</ul>
-							</li>
-							<li class="nav-item mx-auto">
-								<a class="nav-link" href="#">Contact</a>
-							</li>
+	<!-- Owl Carousel 2  -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
+		integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g=="
+		crossorigin="anonymous" referrerpolicy="no-referrer" />
+	<link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css'>
+
+	<!-- Google Font -->
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Jost:wght@300;400;600&display=swap" rel="stylesheet">
+
+	<!-- Custom CSS  -->
+	<link rel="stylesheet" media="screen" type="text/css" href="./assets/css/app.css">
+
+	<title>Corpvision</title>
+</head>
+
+<body>
+	<!-- Start Navbar  -->
+	<nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="site-header">
+		<div class="container-fluid g-0">
+			<a class="navbar-brand" href="#">
+				<i class="fa fa-align-right"></i>
+				<span class="brand-name">Corp Vision</span>
+				<p class="fs-6 text-center">Vision to your Future</p>
+			</a>
+			<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll">
+				<span class="navbar-toggler-icon"></span>
+				<i class="fa fa-times"></i>
+			</button>
+			<div class="navbar-collapse collapse" id="navbarScroll">
+				<ul class="navbar-nav mx-lg-auto g-0">
+					<li class="nav-item mx-auto active">
+						<a class="nav-link" href="#">Home</a>
+					</li>
+					<li class="nav-item mx-auto">
+						<a class="nav-link" href="#">About</a>
+					</li>
+					<li class="nav-item mx-auto">
+						<a class="nav-link" href="#">Services</a>
+					</li>
+					<li class="nav-item dropdown container-fluid d-flex mx-auto flex-column ">
+						<a class="nav-link pe-0 dropdown-toggle text-center" href="#" id="navbarScrollingDropdown"
+							role="button" data-bs-toggle="dropdown">
+							Pages
+						</a>
+						<ul class="dropdown-menu text-center text-lg-left position-absolute"
+							aria-labelledby="navbarScrollingDropdown">
+							<li><a class="dropdown-item nav-link" href="/blog-posts.html">Blog Posts</a></li>
+							<li><a class="dropdown-item nav-link" href="#">404 page</a></li>
+							<li><a class="dropdown-item nav-link" href="#">Landing page</a></li>
+							<li><a class="dropdown-item nav-link" href="#">Elements page</a></li>
 						</ul>
-						<input
-							type="checkbox"
-							name="search"
-							style="display: none"
-							id="search-checkbox"
-						/>
-						<div class="search-box">
-							<label
-								class="exit-btn d-flex align-items-center justify-content-center"
-								for="search-checkbox"
-							>
-								<i class="far fa-times-circle"></i>
-							</label>
-							<input
-								type="text"
-								name="searching"
-								id="search-input"
-								class="container"
-								placeholder="Start Typing"
-							/>
+					</li>
+					<li class="nav-item mx-auto">
+						<a class="nav-link" href="#">Contact</a>
+					</li>
+				</ul>
+				<input type="checkbox" name="search" style="display: none;" id="search-checkbox">
+				<div class="search-box ">
+					<label class="exit-btn d-flex align-items-center justify-content-center" for="search-checkbox">
+						<i class="far fa-times-circle"></i>
+					</label>
+					<input type="text" name="searching" id="search-input" class="container" placeholder="Start Typing">
+				</div>
+				<label for="search-checkbox" class="d-flex search">
+					<i class="fa fa-search"></i>
+				</label>
+				<div class="day ms-3">
+					<i class="far fa-moon"></i>
+					<i class="far fa-sun" style="display: none;"></i>
+				</div>
+			</div>
+		</div>
+	</nav>
+	<!-- End Navbar  -->
+
+	<!-- Start Carousel  -->
+	<section class="carousel-section w-100" id="top">
+		<div class="hero text-center py-5">
+			<div class="container mt-5 d-flex flex-column justify-content-center align-items-center ">
+				<h1 class="hero-title text-white fw-bold pt-5">Blog Posts</h1>
+				<p class="hero-description">Find all our latest news, insights, and events</p>
+			</div>
+		</div>
+
+
+	</section>
+	<!-- End Carousel  -->
+
+
+	<!-- Start Latest New -->
+
+	<section class="latest-news pb-5 pt-5">
+		<div class="container">
+			<div class="row justify-content-center">
+				<div class="col-12 col-md-6 col-lg-4">
+					<div class="card card-latest-news h-100">
+						<div class="latest-card-img">
+							<img src="./assets/img/blog1.jpg" class="card-img-top" alt="...">
 						</div>
-						<label for="search-checkbox" class="d-flex search">
-							<i class="fa fa-search"></i>
-						</label>
-						<div class="day ml-3">
-							<i class="far fa-moon"></i>
-							<i class="far fa-sun" style="display: none"></i>
+						<div class="card-body">
+							<h5 class="card-news-category text-content">Startup Business</h5>
+							<a href="#" class="card-news-title font-weight-bold text-decoration-none">Hello world!</a>
+						</div>
+						<div class="card-footer">
+							<span class="text-content card-footer-content font-weight-bold">by
+								<a href="#" class="text-decoration-none">W3Layouts</a>
+							</span>
+							<span class="text-content float-right mt-1">April 1, 2021</span>
 						</div>
 					</div>
-				</nav>
+				</div>
+
+				<div class="col-12 col-md-6 col-lg-4 pt-5 pt-lg-0 pt-md-0">
+					<div class="card card-latest-news h-100">
+						<div class="latest-card-img">
+							<img src="./assets/img/blog2.jpg" class="card-img-top" alt="...">
+						</div>
+						<div class="card-body">
+							<h5 class="card-news-category text-content">Startup Business</h5>
+							<a href="#" class="card-news-title font-weight-bold text-decoration-none">Companies in NY
+								launched a joint
+								project on a three-tower hall</a>
+						</div>
+						<div class="card-footer">
+							<span class="text-content card-footer-content font-weight-bold">by
+								<a href="#" class="text-decoration-none">W3Layouts</a>
+							</span>
+							<span class="text-content float-right mt-1">April 1, 2021</span>
+						</div>
+					</div>
+				</div>
+
+				<div class="col-12 col-md-6 col-lg-4 pt-5 pt-lg-0">
+					<div class="card card-latest-news h-100">
+						<div class="latest-card-img">
+							<img src="./assets/img/blog3.jpg" class="card-img-top" alt="...">
+						</div>
+						<div class="card-body">
+							<h5 class="card-news-category text-content">Marketing Strategy</h5>
+							<a href="#" class="card-news-title font-weight-bold text-decoration-none">Design
+								breakthrough upgrades the
+								product and ready to launch</a>
+						</div>
+						<div class="card-footer">
+							<span class="text-content card-footer-content font-weight-bold">by
+								<a href="#" class="text-decoration-none">W3Layouts</a>
+							</span>
+							<span class="text-content float-right mt-1">April 1, 2021</span>
+						</div>
+					</div>
+				</div>
 			</div>
-		</header>
-		<!-- end for fixed header  -->
+		</div>
+	</section>
 
-		<section class="about-breadcrum"></section>
+	<!-- End Latest New  -->
 
-		<a href="#top" class="goTop d-none"><i class="fa fa-angle-up"></i></a>
+	<!-- Start Footer  -->
+	<footer class="mt-5">
 
-		<!-- Optional JavaScript; choose one of the two! -->
-		<script src="./assets/js/index.js"></script>
+		<!-- Start Footer Info  -->
+		<div class="footer-info pt-4 pb-4 pt-lg-5 pb-lg-5 pb-md-5 pt-md-5">
+			<div class="container">
+				<div class="row">
+					<div class="col-12 col-lg-4 col-md-6 mb-5 mb-lg-0">
+						<a class="nav-footer text-decoration-none text-light" href="#">
+							<i class="fa fa-align-right"></i>
+							<span class="brand-name">Corp Vision</span>
+							<p>Vision to your Future</p>
+						</a>
+						<p class="footer-font mt-4 mb-4">
+							Lorem ipsum viverra feugiat. Pellen tesque libero ut justo, ultrices in ligula. Semper at
+							tempufddfel.
+							Lorem
+							ipsum dolor sit amet Semper at elit team advisors.
+						</p>
+						<div class="footer-icon footer-font d-flex">
+							<i class="fab me-4 fa-facebook-f"></i>
+							<i class="fab me-4 fa-twitter"></i>
+							<i class="fab me-4 fa-instagram"></i>
+							<i class="fab fa-linkedin-in"></i>
+						</div>
+					</div>
+					<div class="col-12 col-lg-4 col-md-6 mb-5 mb-lg-0">
+						<h4 class="text-light text-uppercase footer-font-content mb-4">contact info</h4>
+						<p class="footer-font">Address : Corp Vision, 343 marketing, #21<br>cravel 1st lane street, NY -
+							62617.</p>
+						<p class="footer-font">
+							Phone Number : <a href="tel:+1(21) 234 4567">
+								+1(21) 234 4567</a>
+						</p>
+						<p class="footer-font">
+							Email : <a href="mailto:info@example.com"> info@example.com</a>
+						</p>
+						<p class="footer-font">
+							Support : <a href="mailto:info@support.com"> info@support.com</a>
+						</p>
+					</div>
+					<div class="col-12 col-lg-4 col-md-6 row justify-content-between">
+						<div class="col-6">
+							<h4 class="text-light text-uppercase footer-font-content mb-4">categories</h4>
+							<ul class="list-unstyled footer-link-inf">
+								<li><a href="#">Marketing Strategy</a></li>
+								<li><a href="#">Startup Business</a></li>
+								<li><a href="#">Web development</a></li>
+							</ul>
+						</div>
+						<div class="col-6">
+							<h4 class="text-light text-uppercase footer-font-content mb-4">meta</h4>
+							<ul class="list-unstyled footer-link-inf">
+								<li><a href="#">Log in</a></li>
+								<li><a href="#">Entries feed</a></li>
+								<li><a href="#">Comments feed</a></li>
+								<li><a href="#">WordPress.org</a></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- End Footer Info  -->
 
-		<!-- light gallery js  -->
-		<script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.js"></script>
-		<script src="https://cdn.jsdelivr.net/npm/lightgallery@2.1.3/lightgallery.umd.min.js"></script>
-		<script src="https://cdn.jsdelivr.net/npm/lightgallery@2.1.3/plugins/thumbnail/lg-thumbnail.umd.js"></script>
-		<script src="https://cdn.jsdelivr.net/npm/lightgallery@2.1.3/plugins/zoom/lg-zoom.umd.js"></script>
-		<script src="https://cdn.jsdelivr.net/npm/lightgallery@2.1.3/plugins/fullscreen/lg-fullscreen.min.js"></script>
-		<script src="https://cdn.jsdelivr.net/npm/lightgallery@2.1.3/plugins/autoplay/lg-autoplay.min.js"></script>
-		<script src="https://cdn.jsdelivr.net/npm/lightgallery@2.1.3/plugins/share/lg-share.min.js"></script>
-		<script>
-			lightGallery(document.getElementById('animated-thumbnails'), {
-				selector: '.lighting',
-				alignThumbnails: 'left',
-				loop: true,
-				download: false,
-				mode: 'lg-fade',
-				mousewheel: true,
-			});
-		</script>
+		<!-- Start Copyright  -->
+		<section class="copyright-section pt-4 pb-4">
+			<div class="container text-center footer-font">
+				<p class="copyright m-0">© 2022 Corp Vision All Rights Reserved | WordPress Theme by <a
+						href="#">W3Layouts.</a>
+				</p>
+			</div>
+		</section>
+		<!-- End Copyright  -->
+	</footer>
 
-		<!-- link for script in owl carousel lib  -->
-		<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-		<script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
-		<script src="./script.js"></script>
-		<script>
-			jQuery('#carousel').owlCarousel({
-				items: 1,
-				lazyLoad: true,
-				loop: false,
-				margin: 20,
-				responsiveClass: true,
-				smartSpeed: 300,
-				nav: false,
-				dotsEach: 1,
-				// responsive: {
-				//   0: {
-				//     items: 1
-				//   },
+	<!-- End footer  -->
 
-				//   600: {
-				//     items: 3
-				//   },
+	<a href="#top" class="goTop d-none"><i class="fa fa-angle-up"></i></a>
 
-				//   1024: {
-				//     items: 4
-				//   },
+	<script src="./assets/js/index.js"></script>
 
-				//   1366: {
-				//     items: 4
-				//   }
-				// }
-			});
-		</script>
+	<!-- Link For Script In Owl Carousel Lib  -->
+	<script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js'></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"
+		integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw=="
+		crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 
-		<!-- jQuery and Bootstrap Bundle (includes Popper) -->
-		<script
-			src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
-			integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
-			crossorigin="anonymous"
-		></script>
-		<script
-			src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"
-			integrity="sha384-fQybjgWLrvvRgtW6bFlB7jaZrFsaBXjsOMm/tB9LTS58ONXgqbR9W8oWht/amnpF"
-			crossorigin="anonymous"
-		></script>
-	</body>
+	<!-- jQuery and Bootstrap Bundle (includes Popper) -->
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+		integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+		crossorigin="anonymous"></script>
+
+
+
+</body>
+
 </html>
