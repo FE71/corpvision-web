@@ -1,0 +1,10 @@
+body#blog-posts-page {
+	background-color: var(--bg-secondary-color);
+
+	.latest-news {
+		margin-top: 3rem;
+		.card-latest-news {
+			box-shadow: none;
+		}
+	}
+}

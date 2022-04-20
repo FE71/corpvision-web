@@ -677,7 +677,7 @@ html[data-theme='dark'] {
   --overlay-color: rgba(29, 42, 55, 0.8);
 }
 
-body {
+body#home-page {
   background-color: var(--bg-color);
 }
 
@@ -1314,6 +1314,19 @@ footer {
     padding: 0rem 8rem;
   }
   /* end of responsive */
+}
+
+body#blog-posts-page {
+  background-color: var(--bg-secondary-color);
+}
+
+body#blog-posts-page .latest-news {
+  margin-top: 3rem;
+}
+
+body#blog-posts-page .latest-news .card-latest-news {
+  -webkit-box-shadow: none;
+          box-shadow: none;
 }
 
 /* edit for showcase using light gallery */
