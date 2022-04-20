@@ -45,6 +45,7 @@ html {
 }
 
 .goTop {
+  display: none;
   position: fixed;
   height: 50px;
   width: 50px;
