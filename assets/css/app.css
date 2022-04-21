@@ -406,6 +406,10 @@ html {
   color: #009f4d !important;
 }
 
+#site-header.scroll .nav-link.active {
+  color: #009f4d !important;
+}
+
 .dropdown-item:hover {
   background-color: var(--bg-hover-color);
 }
@@ -1338,6 +1342,28 @@ body#blog-posts-page .latest-news {
 body#blog-posts-page .latest-news .card-latest-news {
   -webkit-box-shadow: none;
           box-shadow: none;
+}
+
+body#blog-posts-page .pagination-style {
+  margin-top: 3rem;
+}
+
+body#blog-posts-page .pagination-style .page-numbers .page-number {
+  margin-left: 0.125rem;
+  margin-right: 0.125rem;
+  font-weight: bold;
+  color: var(--black-color);
+  background-color: var(--bg-secondary-color);
+  padding: 0.5rem 1rem;
+  border: 2px solid #d5d5d5;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+}
+
+body#blog-posts-page .pagination-style .page-numbers .page-number:hover, body#blog-posts-page .pagination-style .page-numbers .page-number.active {
+  color: #fff;
+  border-color: #009f4d;
+  background-color: #009f4d;
 }
 
 /* edit for showcase using light gallery */
