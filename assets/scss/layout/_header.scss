@@ -120,6 +120,9 @@
 	.active .nav-link {
 		color: $color-dark-green !important;
 	}
+	.nav-link.active {
+		color: $color-dark-green !important;
+	}
 }
 
 .dropdown-item:hover {
