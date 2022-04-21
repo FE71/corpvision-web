@@ -45,6 +45,7 @@ html {
 }
 
 .goTop {
+  display: none;
   position: fixed;
   height: 50px;
   width: 50px;
@@ -279,6 +280,10 @@ html {
   padding-bottom: 0px;
 }
 
+.navbar .nav-link {
+  text-transform: uppercase;
+}
+
 .navbar.active {
   background-color: rgba(0, 0, 0, 0.7) !important;
 }
@@ -289,8 +294,25 @@ html {
   background-color: rgba(0, 0, 0, 0.7);
 }
 
+.navbar .navbar-toggler {
+  margin-right: 1rem;
+  padding: 0.25rem 0.25rem;
+  font-size: 1rem;
+  background-color: #009f4d;
+  color: white;
+}
+
 .navbar .navbar-content {
   padding: 1rem;
+}
+
+.navbar .day {
+  position: absolute;
+  top: 31%;
+  right: 17%;
+  font-size: 1.8rem;
+  color: white;
+  cursor: pointer;
 }
 
 .fa-align-right {
@@ -323,31 +345,19 @@ html {
           transform: rotate(45deg);
 }
 
-.dropdown-item {
+.dropdown-menu .dropdown-item {
   padding: 0.5rem 3rem;
   color: var(--text-link-color) !important;
 }
 
-.nav-link,
-.dropdown-item {
+.dropdown-menu .dropdown-item.active {
+  color: #009f4d !important;
+  background-color: unset;
+}
+
+.dropdown-menu .nav-link,
+.dropdown-menu .dropdown-item {
   text-transform: uppercase;
-}
-
-.navbar-toggler {
-  margin-right: 1rem;
-  padding: 0.25rem 0.25rem;
-  font-size: 1rem;
-  background-color: #009f4d;
-  color: white;
-}
-
-.day {
-  position: absolute;
-  top: 31%;
-  right: 17%;
-  font-size: 1.8rem;
-  color: white;
-  cursor: pointer;
 }
 
 .fa-times {
@@ -393,6 +403,10 @@ html {
 }
 
 #site-header.scroll .active .nav-link {
+  color: #009f4d !important;
+}
+
+#site-header.scroll .nav-link.active {
   color: #009f4d !important;
 }
 
@@ -620,6 +634,36 @@ html {
   color: white;
 }
 
+.hero {
+  height: 250px;
+  background: -webkit-gradient(linear, left bottom, left top, from(var(--overlay-color)), to(var(--overlay-color))), url(/assets/img/b1.jpg);
+  background: linear-gradient(0deg, var(--overlay-color), var(--overlay-color)), url(/assets/img/b1.jpg);
+  background-size: cover;
+}
+
+.hero .hero-description {
+  color: #fff;
+  opacity: 0.7;
+}
+
+@media screen and (min-width: 575.98px) {
+  .hero {
+    height: 285px;
+  }
+}
+
+@media screen and (min-width: 767.98px) {
+  .hero {
+    height: 325px;
+  }
+}
+
+@media screen and (min-width: 991.98px) {
+  .hero {
+    height: 390px;
+  }
+}
+
 /* set for light and dark theme */
 html[data-theme='light'] {
   --text-link-color: #3f3a64be;
@@ -647,7 +691,7 @@ html[data-theme='dark'] {
   --overlay-color: rgba(29, 42, 55, 0.8);
 }
 
-body {
+body#home-page {
   background-color: var(--bg-color);
 }
 
@@ -740,7 +784,7 @@ body {
   border-radius: 10px;
   cursor: pointer;
   font-size: 1.2rem;
-  font-weight: 600;
+  font-weight: bold;
   padding-top: 13px;
   padding-bottom: 13px;
   background-color: var(--bg-color);
@@ -751,7 +795,7 @@ body {
 
 .our-service .our-service-items .card .card-body .ourService-learn {
   font-size: 1rem;
-  font-weight: 600;
+  font-weight: bold;
 }
 
 .our-service .our-service-items .card .card-body .ourService-link a,
@@ -1074,6 +1118,7 @@ body {
 .latest-news .card-latest-news .card-footer-content a {
   color: var(--logo-color);
   font-size: 20px;
+  font-weight: bold;
   -webkit-transition: all 0.5s;
   transition: all 0.5s;
 }
@@ -1284,6 +1329,41 @@ footer {
     padding: 0rem 8rem;
   }
   /* end of responsive */
+}
+
+body#blog-posts-page {
+  background-color: var(--bg-secondary-color);
+}
+
+body#blog-posts-page .latest-news {
+  margin-top: 3rem;
+}
+
+body#blog-posts-page .latest-news .card-latest-news {
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
+body#blog-posts-page .pagination-style {
+  margin-top: 3rem;
+}
+
+body#blog-posts-page .pagination-style .page-numbers .page-number {
+  margin-left: 0.125rem;
+  margin-right: 0.125rem;
+  font-weight: bold;
+  color: var(--black-color);
+  background-color: var(--bg-secondary-color);
+  padding: 0.5rem 1rem;
+  border: 2px solid #d5d5d5;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+}
+
+body#blog-posts-page .pagination-style .page-numbers .page-number:hover, body#blog-posts-page .pagination-style .page-numbers .page-number.active {
+  color: #fff;
+  border-color: #009f4d;
+  background-color: #009f4d;
 }
 
 /* edit for showcase using light gallery */

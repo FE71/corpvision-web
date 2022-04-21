@@ -1,4 +1,32 @@
-// .about-breadcrum {
-// 	height: 200vh;
-// 	background-color: lightgreen;
-// }
+body#blog-posts-page {
+	background-color: var(--bg-secondary-color);
+
+	.latest-news {
+		margin-top: 3rem;
+		.card-latest-news {
+			box-shadow: none;
+		}
+	}
+
+	.pagination-style {
+		margin-top: 3rem;
+		.page-numbers {
+			.page-number {
+				margin-left: 0.125rem;
+				margin-right: 0.125rem;
+				font-weight: bold;
+				color: var(--black-color);
+				background-color: var(--bg-secondary-color);
+				padding: 0.5rem 1rem;
+				border: 2px solid rgb(213, 213, 213);
+				transition: all 0.5s;
+				&:hover,
+				&.active {
+					color: #fff;
+					border-color: $color-dark-green;
+					background-color: $color-dark-green;
+				}
+			}
+		}
+	}
+}
