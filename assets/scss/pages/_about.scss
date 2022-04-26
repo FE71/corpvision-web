@@ -1,0 +1,45 @@
+body{
+    .slogan{
+       
+        .col{
+            height: 100%;
+            // margin-left: 5px;
+            margin-top: 3rem;
+            background-color: #f8f9fa;
+            .item{
+                padding: 40px 30px;
+                display: flex;
+                justify-content: right;
+                align-items: top;
+                .icon{
+                    width: 10%;
+                    text-align: right;
+                    i{
+                        font-size: 30px;
+                    }
+                    
+                }
+                .text{
+                    width: 90%;
+                    margin-left: 25px;
+                    
+                    a{
+                        text-decoration: none;
+                        color:  $color-dark-green;
+                        font-weight:700;
+                        line-height: 1.2;
+                         margin-bottom: 15px;
+                        font-size: 22px;
+                    }
+                    p
+                    {
+                        color: #919192;
+                    }
+                }
+            }
+
+        }
+
+        
+    }
+}
