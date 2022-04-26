@@ -1,12 +1,13 @@
 body{
     .slogan{
-       
         .col{
             height: 100%;
             // margin-left: 5px;
             margin-top: 3rem;
+
             background-color: #f8f9fa;
             .item{
+                height: 100%;
                 padding: 40px 30px;
                 display: flex;
                 justify-content: right;
@@ -42,4 +43,103 @@ body{
 
         
     }
+    .design{
+        background-color: #f8f9fa;
+        .container{
+            display: flex;
+            flex-wrap: wrap;
+            padding-top: 3rem;
+            justify-content: center;
+            align-items: center;
+            .main-d{
+                width: 100%;
+                height: 100%;
+                header{
+                    h5{
+                        font-size: 14px;
+                        font-weight: 600;
+                        text-transform: uppercase;
+                        line-height: 30px;
+                        letter-spacing: 1px;
+                        color: #7e7d7d;
+                    }
+                    h3{
+                        color: #3f3a64;
+                        font-size: 30px;
+                        line-height: 38px;
+                        font-weight: 700;
+                    }
+                }
+                main{
+                    h4{
+                        font-weight: 700;
+                    }
+                    p{
+                        color: #7e7d7d;
+                    }
+                    span{
+                        font-size: 35px;
+                        display: block;
+                        margin-bottom: 15px
+                    }
+                }
+            }
+            .image-d{   
+                width: 100%;
+                height: 100%;
+                display: flex;
+                img{
+                    width: 48%;
+                    
+                    height: 100%;
+                    border-radius: 5%;
+                }
+                .img2{
+                    margin-left: 4%;
+                   
+                }
+
+            }
+        }
+        
+    }
+    .teams{
+        .container
+        {
+            
+            main{
+               
+            }
+        }
+    }
 }
+/* for smaller device  */
+@media (min-width: 412px) {
+
+}
+
+/* mobile responsive */
+@media (min-width: 575.98px) {
+
+}
+
+/* tablet responsive */
+@media (min-width: 767.98px) {
+
+}
+
+/* pc responsive */
+@media (min-width: 991.98px) {
+    .design{
+        .container{
+            flex-wrap: nowrap;
+            .main-d{
+                width: 50%;
+            }
+            .image-d{
+                width: 50%;
+            }
+        }
+    }
+}
+
