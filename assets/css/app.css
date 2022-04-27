@@ -392,7 +392,7 @@ html {
 }
 
 #site-header.scroll .navbar-nav {
-  background-color: var(--bg-color) !important;
+  background-color: var(--bg-color);
 }
 
 #site-header.scroll a {
@@ -569,6 +569,9 @@ html {
 
 /* pc responsive */
 @media (min-width: 991.98px) {
+  #site-header.scroll .navbar-nav {
+    background-color: transparent;
+  }
   .exit-btn {
     font-size: 4.4rem;
   }
