@@ -1,4 +1,79 @@
-body{
+body#about-page{
+    background-color: var(--bg-secondary-color-2);
+    .introduction{
+        padding-top: 3rem;
+        .container{
+            .row{
+                .item{
+                    background-color: #96d5b5;
+                    border-radius: 30% 70% 70% 30% / 30% 40% 40% 70%;
+                    .img{
+                        
+                        img{
+                            border-radius: 30% 70% 70% 30% / 30% 30% 70% 70%;               
+                        }
+                    }
+                    position: relative !important;
+                    .infor-box{
+                        background-color: $color-dark-green;
+                        color: #fff;
+                        position: absolute;
+                        right: 20%;
+                        bottom: 10%;
+                        border-radius: 15px;
+                        padding: 35px;
+                        // box-shadow: 30px 30px 30px rgb(0 0 0 / 20%);
+                        min-width: 200px;
+                        min-height: 200px;
+                        transform: rotate(45deg);
+                        h6{
+                            transform: rotate(-45deg) !important;
+                            font-size: 40px;
+                            line-height: 40px;
+                            color: #fff;
+                            font-weight: 600;
+                            margin: 0;
+                            padding: 0 0 10px 0;
+                        }
+                        p{
+                            transform: rotate(-45deg) !important;
+                            color: #fff;
+                            font-size: 24px;
+                            line-height: 28px;
+                            padding-left: 20px;
+                            padding-top: 10px;
+                        }
+                    }
+                }
+                .item2{
+                    h5{
+                        padding-top: 2rem;
+                        font-size: 14px;
+                        font-weight: 600;
+                        text-transform: uppercase;
+                        line-height: 30px;
+                        letter-spacing: 1px;
+                        color: #7e7d7d;
+                        display: block;
+                    }
+                    h3{
+                        font-size: 32px !important;
+                        line-height: 40px;
+                    }
+                    h4{
+                        font-size: 20px;
+                        color: #7e7d7d;
+                    }
+                    i{
+                        font-size: 55px;
+                        color: $color-dark-green;
+                        opacity: 0.5;
+                        transform: translate(0,25px);
+                    }
+                }
+            }
+        }
+    }
     .slogan{
         .col{
             height: 100%;
@@ -6,6 +81,7 @@ body{
             margin-top: 3rem;
 
             background-color: #f8f9fa;
+            background-color: var(--bg-secondary-color);
             .item{
                 height: 100%;
                 padding: 40px 30px;
@@ -45,6 +121,7 @@ body{
     }
     .design{
         background-color: #f8f9fa;
+        background-color: var(--bg-secondary-color);
         .container{
             display: flex;
             padding-top: 3rem;
@@ -165,9 +242,65 @@ body{
                     .col{
                        .item{
                            height: 100%;
+                          
+                           .img{
+                                position: relative;
+                                .info{
+                                    background-color: #504e4e;
+                                    position: absolute;
+                                    left: 0;
+                                    top: 0;
+                                    width: 100%;
+                                    height: 100%;
+                                    display: flex;
+                                    flex-direction: column;
+                                    justify-content: center;
+                                    align-items: center;
+                                    text-align: center;
+                                    opacity: 0;
+                                    visibility: hidden;
+                                    overflow: hidden;
+                                    transition: all 0.4s;
+                                    .content{
+                                        color:#fff;
+                                        font-size: 25px;
+                                        padding: 15px;
+                                        transform: translate(0,100%);
+                                        transition: all 0.2s;
+                                        a{
+                                            color:#fff;
+                                            
+                                            i{
+                                                font-size: 20px;
+                                                margin-left: 30px !important;
+                                                margin-top: 20px;
+                                            }
+                                        }
+                                    }
+                               }
+                               &:hover{
+                                    .info{
+                                    
+                                        visibility: visible;
+                                        opacity: 0.9;
+                                        p{
+                                            position: relative;
+                                            opacity: 1;
+                                            transform: translate(0, 0);
+                                        }
+                                        .content{
+                                             transform: translate(0, 0);
+                                        }
+                                    }
+                                    
+                                 
+                                }
+                           }
                            img{
                                width: 100%;
                            }
+                           
+                           
                            .text{
                                text-align: center;
                                
@@ -175,6 +308,10 @@ body{
                                     margin: 25px 0 5px;
                                     font-size: 20px;
                                     font-weight: 600;
+                                    cursor: pointer;
+                                    &:hover{
+                                        color: $color-dark-green;
+                                    }
                                }
                                p{
                                 color: #7e7d7d;
@@ -190,6 +327,7 @@ body{
     }
     .reason{
         background-color: #f7f7f7;
+        background-color: var(--bg-secondary-color);
         margin-top: 3rem;
         .header{
             padding-top: 3rem;
@@ -225,6 +363,7 @@ body{
                         }
                     }
                     .text{
+
                         a{
                             text-align: left;
                             margin-bottom: 0;
@@ -298,6 +437,15 @@ body{
 
 /* pc responsive */
 @media (min-width: 991.98px) {
+    .introduction{
+        .container{
+            .item{
+                .infor-box{
+                    bottom: 0 !important;
+                }
+            }
+        }
+    }
     .design{
         .container{
             .main-d{
@@ -336,6 +484,10 @@ body{
     }
     .talk{
         .container{
+            h3{
+                color: #3f3a64 !important;
+                
+            }
             grid-template-columns: 60% 40% !important;
             .button{
                 padding-left: 40% !important;
