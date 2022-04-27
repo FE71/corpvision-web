@@ -1377,6 +1377,7 @@ body#blog-posts-page .pagination-style .page-numbers .page-number:hover, body#bl
   background-color: #009f4d;
 }
 
+<<<<<<< HEAD
 body#about-page {
   background-color: var(--bg-secondary-color-2);
 }
@@ -1457,6 +1458,53 @@ body#about-page .introduction .container .row .item2 i {
   opacity: 0.5;
   -webkit-transform: translate(0, 25px);
           transform: translate(0, 25px);
+=======
+body#contact-page {
+  background-color: var(--bg-color);
+}
+
+body#contact-page .contact-main {
+  background-color: var(--bg-secondary-color);
+}
+
+body#contact-page .contact-main .main-description {
+  color: var(--black-color);
+}
+
+body#contact-page .contact-main .main-description .single-contact-info {
+  background-color: var(--bg-color);
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: auto 1fr;
+      grid-template-columns: auto 1fr;
+  grid-gap: 20px;
+  padding: 23px;
+  -webkit-box-shadow: 1px 1px 5px 0px rgba(1, 1, 1, 0.05);
+          box-shadow: 1px 1px 5px 0px rgba(1, 1, 1, 0.05);
+  border-radius: 8px;
+}
+
+@media screen and (min-width: 412px) {
+  body#contact-page .contact-main .main-description {
+    max-width: 510px;
+  }
+  body#contact-page .contact-main .main-description .single-contact-info {
+    grid-gap: 16px;
+    padding: 30px;
+  }
+}
+
+@media screen and (min-width: 575.98px) {
+  body#contact-page .contact-main .main-description {
+    max-width: 690px;
+  }
+}
+
+@media screen and (min-width: 767.98px) {
+  body#contact-page .contact-main .main-description {
+    max-width: 704px;
+  }
+>>>>>>> 573c3de45cd853ed6e556d46caf5436aa75b1492
 }
 
 body#about-page .slogan .col {
@@ -1647,6 +1695,7 @@ body#about-page .teams .container .main .row .col .item {
   height: 100%;
 }
 
+<<<<<<< HEAD
 body#about-page .teams .container .main .row .col .item .img {
   position: relative;
 }
@@ -1716,6 +1765,8 @@ body#about-page .teams .container .main .row .col .item .img:hover .info .conten
           transform: translate(0, 0);
 }
 
+=======
+>>>>>>> 573c3de45cd853ed6e556d46caf5436aa75b1492
 body#about-page .teams .container .main .row .col .item img {
   width: 100%;
 }
@@ -1731,10 +1782,13 @@ body#about-page .teams .container .main .row .col .item .text h6 {
   cursor: pointer;
 }
 
+<<<<<<< HEAD
 body#about-page .teams .container .main .row .col .item .text h6:hover {
   color: #009f4d;
 }
 
+=======
+>>>>>>> 573c3de45cd853ed6e556d46caf5436aa75b1492
 body#about-page .teams .container .main .row .col .item .text p {
   color: #7e7d7d;
 }
@@ -1822,7 +1876,7 @@ body#about-page .talk .container .text p {
   font-size: 17px;
   line-height: 27px;
   color: #b3b3b3;
-  opacity: .8;
+  opacity: 0.8;
   margin-top: 1rem;
 }
 
