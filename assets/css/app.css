@@ -1478,6 +1478,10 @@ body#about-page .introduction .container .row .item .infor-box p {
   padding-top: 10px;
 }
 
+body#about-page .introduction .container .row .item2 {
+  padding-left: 50px !important;
+}
+
 body#about-page .introduction .container .row .item2 h5 {
   padding-top: 2rem;
   font-size: 14px;
