@@ -180,13 +180,13 @@ body#about-page{
         
     }
     .video{
-        background-image: url(/assets/img/b1.jpg) !important;
+        background-image: url(/assets/img/bg1.jpg) !important;
         background-size: cover;
         background-repeat: no-repeat;
-        background-position: center;
+        background-position: center center;
         height: 400px;
         margin-top: 3rem;
-        opacity: 0.8;
+        opacity: 1;
         position: relative;
         &::before {
 			content: '';
