@@ -5,8 +5,8 @@ html[data-theme='light'] {
 	--bg-hover-color: #e9ecef;
 	--logo-color: #3f3a64;
 	--border-color: transparent;
-	--black-color: #3f3a64;
-	--blue-text-font: #3f3a64;
+	--small-text-color: #3f3a64;
+	--small-title-color: #000;
 	--bg-secondary-color: #f7f7f7;
 	--service-link: #3f3a64;
 	--overlay-color: rgba(29, 42, 55, 0.7);
@@ -17,10 +17,10 @@ html[data-theme='dark'] {
 	--bg-hover-color: #22212e;
 	--logo-color: #e9ecef;
 	--border-color: rgba(255, 255, 255, 0.2);
-	--black-color: #e9ecef;
-	--blue-text-font: #e9ecef;
+	--small-text-color: #c2c2c2;
+	--small-title-color: #eee;
 	--bg-secondary-color: #100f19;
-	--bg-secondary-color-2:#151421;
+	--bg-secondary-color-2: #151421;
 	--service-link: #e9ecef;
 	--overlay-color: rgba(29, 42, 55, 0.8);
 }
@@ -37,7 +37,7 @@ body#home-page {
 	.about-us-list li {
 		margin: 20px 0px;
 		a {
-			color: var(--blue-text-font);
+			color: var(--logo-color);
 			text-decoration: none;
 			font-weight: bold;
 			letter-spacing: 1px;
@@ -78,7 +78,7 @@ body#home-page {
 		}
 
 		.new-challenge-text {
-			color: var(--black-color);
+			color: var(--small-text-color);
 			transition: 0.3s;
 			&:hover {
 				color: $color-light-green;
@@ -272,7 +272,7 @@ body#home-page {
 	}
 	.line-info {
 		font-size: 18px;
-		color: var(--black-color);
+		color: var(--small-text-color);
 	}
 }
 /* End Our Success-Line */
