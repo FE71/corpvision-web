@@ -1,0 +1,46 @@
+body#error-page{
+    .error-page{
+        margin-top: 3rem;
+        .row{
+            .item{
+                height: 100%;
+                img{
+                    height: 100%;
+                    width: 50%;
+                }
+                h3{
+                    font-size: 80px;
+                    color: #009f4d;
+                }
+                h5{
+                    font-size: 22px;
+                    line-height: 34px;
+                }
+                p{
+                    font-size: 17px;
+                    line-height: 27px;
+                    color: #666;
+                }
+                a{
+                    text-decoration: none;
+                    font-weight: 600;
+                    font-size: larger;
+                    color: $--heading-color;
+                }
+            }
+        }
+    }
+}
+/* pc responsive */
+@media (min-width: 991.98px) {
+	/* pc responsive header */
+	.error-page{
+        h3{
+            font-size: 120px !important;
+        }
+        h5{
+            font-size: 26px !important;
+        }
+    }
+	/* end of responsive */
+}
