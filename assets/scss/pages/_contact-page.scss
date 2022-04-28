@@ -1,10 +1,13 @@
 body#contact-page {
-	background-color: var(--bg-color);
+	background-color: var(--bg-secondary-color);
 
 	.contact-main {
-		background-color: var(--bg-secondary-color);
 		.main-description {
-			color: var(--black-color);
+			color: var(--small-title-color);
+			& > p {
+				max-width: 800px;
+				margin: 0 auto 2.5rem;
+			}
 
 			.single-contact-info {
 				background-color: var(--bg-color);
@@ -14,6 +17,29 @@ body#contact-page {
 				padding: 23px;
 				box-shadow: 1px 1px 5px 0px rgba(1, 1, 1, 0.05);
 				border-radius: 8px;
+				.icon-box {
+					color: var(--text-link-color);
+					font-size: 2rem;
+				}
+				.text-box {
+					h3 {
+						color: var(--small-title-color);
+					}
+					a {
+						color: var(--small-text-color);
+					}
+				}
+			}
+		}
+	}
+
+	.contact-map {
+		.map {
+			iframe {
+				width: 100%;
+				height: 100%;
+				min-height: 300px;
+				filter: grayscale(100%);
 			}
 		}
 	}
@@ -40,7 +66,13 @@ body#contact-page {
 	@media screen and (min-width: 767.98px) {
 		.contact-main {
 			.main-description {
-				max-width: 704px;
+				max-width: 1200px;
+			}
+		}
+		.contact-map {
+			.map {
+				max-width: 1200px;
+				margin: 0 auto;
 			}
 		}
 	}
