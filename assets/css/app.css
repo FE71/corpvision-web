@@ -1940,6 +1940,385 @@ body#about-page .talk .container .button button i {
   }
 }
 
+body#service-page {
+  background-color: var(--bg-secondary-color-2);
+}
+
+body#service-page .introduction {
+  background-color: #f7f7f7;
+  background-color: var(--bg-secondary-color-2);
+}
+
+body#service-page .introduction .header h5 {
+  font-size: 14px;
+  font-weight: 600;
+  text-transform: uppercase;
+  line-height: 30px;
+  letter-spacing: 1px;
+  color: #7e7d7d;
+  display: block;
+  text-align: center;
+  padding-top: 3rem;
+}
+
+body#service-page .introduction .header h3 {
+  text-align: center;
+  font-size: 30px !important;
+  line-height: 38px;
+}
+
+body#service-page .introduction .main .item.text {
+  background-color: #fff !important;
+  background-color: var(--bg-secondary-color-1) !important;
+  color: var(--text-link-color) !important;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 2rem;
+  text-align: center;
+  width: 100%;
+  height: 100%;
+}
+
+body#service-page .introduction .main .item.img {
+  width: 100%;
+  height: 100%;
+}
+
+body#service-page .introduction .main .item.img img {
+  width: 100%;
+  height: 100%;
+}
+
+body#service-page .introduction .main .item.img p {
+  padding: 0.5rem 0;
+}
+
+body#service-page .porfolio .header {
+  padding: 3rem 0;
+  padding-bottom: 1rem;
+  text-align: center;
+}
+
+body#service-page .porfolio .header h5 {
+  font-size: 14px;
+  font-weight: 600;
+  text-transform: uppercase;
+  line-height: 30px;
+  letter-spacing: 1px;
+  color: #7e7d7d;
+  display: block;
+}
+
+body#service-page .porfolio .header h3 {
+  font-size: 25px;
+  line-height: 45px;
+  font-weight: 700;
+}
+
+body#service-page .porfolio .col {
+  height: 100%;
+  margin-top: 1rem;
+  background-color: #f8f9fa;
+  background-color: var(--bg-secondary-color);
+}
+
+body#service-page .porfolio .col .item {
+  height: 100%;
+  padding: 40px 30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: right;
+      -ms-flex-pack: right;
+          justify-content: right;
+  -webkit-box-align: top;
+      -ms-flex-align: top;
+          align-items: top;
+}
+
+body#service-page .porfolio .col .item .icon {
+  width: 10%;
+  text-align: right;
+}
+
+body#service-page .porfolio .col .item .icon i {
+  font-size: 30px;
+}
+
+body#service-page .porfolio .col .item .text {
+  width: 90%;
+  margin-left: 5px;
+}
+
+body#service-page .porfolio .col .item .text a {
+  text-decoration: none;
+  color: #3f3a64;
+  font-weight: 700;
+  line-height: 1.2;
+  margin-bottom: 15px;
+  font-size: 22px;
+}
+
+body#service-page .porfolio .col .item .text a:hover {
+  color: #009f4d;
+}
+
+body#service-page .porfolio .col .item .text p {
+  color: #919192;
+}
+
+body#service-page .contact {
+  margin-top: 3rem;
+  background-image: url(/assets/img/bg1.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  height: 100%;
+  opacity: 1;
+  position: relative;
+  color: #fff;
+}
+
+body#service-page .contact::before {
+  content: '';
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  top: 0px;
+  left: 0px;
+  background-color: var(--overlay-color);
+}
+
+body#service-page .contact .row {
+  padding-top: 3rem;
+  position: relative;
+  padding-bottom: 3rem;
+}
+
+body#service-page .contact .row .col .item.info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: left;
+      -ms-flex-pack: left;
+          justify-content: left;
+  height: 100%;
+}
+
+body#service-page .contact .row .col .item.info h6 {
+  font-size: 14px;
+  font-weight: 600;
+  text-transform: uppercase;
+  line-height: 30px;
+  letter-spacing: 1px;
+  display: block;
+}
+
+body#service-page .contact .row .col .item.info h3 {
+  font-size: 26px !important;
+  line-height: 32px;
+  margin-bottom: 1.5rem;
+}
+
+body#service-page .contact .row .col .item.info .main {
+  margin: 1.5rem 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  border-bottom: 1px solid #cacdd0;
+}
+
+body#service-page .contact .row .col .item.info .main .icon {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+body#service-page .contact .row .col .item.info .main .icon span {
+  font-size: 30px;
+}
+
+body#service-page .contact .row .col .item.info .main .text {
+  font-size: 20px;
+  margin-left: 25px;
+  font-weight: 700;
+  color: #fff;
+  margin-bottom: 1.5rem;
+}
+
+body#service-page .contact .row .col .item.info .main .text p {
+  color: #cacdd0;
+  margin-top: 10px;
+  font-size: 16px;
+}
+
+body#service-page .contact .row .col .item.info .main .text a {
+  color: #cacdd0;
+  text-decoration: none;
+}
+
+body#service-page .contact .row .col .item.info .main.lastMain {
+  border-bottom: none;
+}
+
+body#service-page .contact .row .col .item.form {
+  background-color: #fff;
+  height: 100%;
+  margin-bottom: 1.5rem;
+  border-radius: 15px;
+  padding: 15px 10%;
+}
+
+body#service-page .contact .row .col .item.form h3 {
+  padding-top: 3rem;
+  font-size: 24px;
+  line-height: 32px;
+  color: #3f3a64;
+}
+
+body#service-page .contact .row .col .item.form p {
+  margin-bottom: 1.5rem !important;
+  color: #cacdd0;
+}
+
+body#service-page .contact .row .col .item.form input {
+  margin-bottom: 2rem;
+  border-radius: 5px;
+  background-color: #f7f7f7;
+  height: 65px !important;
+}
+
+body#service-page .contact .row .col .item.form textarea {
+  background-color: #f7f7f7;
+  border-radius: 5px;
+}
+
+body#service-page .contact .row .col .item.form button {
+  margin-top: 2rem;
+  width: 100% !important;
+  padding-bottom: 1.5rem;
+}
+
+body#service-page .solution {
+  background-color: #f7f7f7 !important;
+  background-color: var(--bg-secondary-color-2) !important;
+  padding: 5% 0;
+}
+
+body#service-page .solution .header {
+  padding-bottom: 2rem;
+}
+
+body#service-page .solution .header h5 {
+  font-size: 14px;
+  font-weight: 600;
+  text-transform: uppercase;
+  line-height: 30px;
+  letter-spacing: 1px;
+  color: #7e7d7d;
+  display: block;
+  text-align: center;
+  padding-top: 3rem;
+}
+
+body#service-page .solution .header h3 {
+  text-align: center;
+  font-size: 30px !important;
+  line-height: 38px;
+}
+
+body#service-page .solution .main .col {
+  background-color: #fff !important;
+  background-color: var(--bg-secondary-color) !important;
+  -webkit-transition: all 0.4s ease;
+  transition: all 0.4s ease;
+  border-radius: 5px;
+}
+
+body#service-page .solution .main .col:hover {
+  -webkit-transform: translate(0, -20px);
+          transform: translate(0, -20px);
+}
+
+body#service-page .solution .main .item.text {
+  background-color: #fff !important;
+  background-color: var(--bg-secondary-color-1) !important;
+  color: var(--text-link-color) !important;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 2rem;
+  text-align: center;
+  width: 100%;
+  height: 100%;
+}
+
+body#service-page .solution .main .item.text a {
+  font-size: 22px;
+  line-height: 28px;
+  font-weight: 600;
+  margin-top: 25px;
+  display: block;
+  color: var(--heading-color);
+  text-decoration: none;
+  color: var(--text-link-color) !important;
+}
+
+body#service-page .solution .main .item.text a:hover {
+  color: #009f4d !important;
+}
+
+/* for smaller device  */
+/* mobile responsive */
+/* tablet responsive */
+/* pc responsive */
+@media (min-width: 991.98px) {
+  .introduction .main .col {
+    width: 48%;
+    margin: 2% 1%;
+  }
+  body#service-page .contact .row .col .item.form button {
+    width: 30% !important;
+  }
+  .porfolio .col,
+  .solution .col {
+    width: 32%;
+    margin-left: 1.3%;
+  }
+}
+
 /* edit for showcase using light gallery */
 .pagination-text {
   color: #28a745;
