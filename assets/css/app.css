@@ -559,9 +559,6 @@ html {
   #search-input {
     font-size: 44px;
   }
-  .navbar .navbar-brand {
-    margin-left: 10%;
-  }
   .navbar .navbar-toggler {
     margin-right: 10%;
   }
@@ -587,6 +584,9 @@ html {
   }
   .navbar {
     padding: 0 10%;
+  }
+  .navbar .navbar-brand {
+    margin-left: 0;
   }
 }
 

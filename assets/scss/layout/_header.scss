@@ -239,9 +239,6 @@
 		font-size: 44px;
 	}
 	.navbar {
-		.navbar-brand {
-			margin-left: 10%;
-		}
 		.navbar-toggler {
 			margin-right: 10%;
 		}
@@ -272,5 +269,8 @@
 
 	.navbar {
 		padding: 0 10%;
+		.navbar-brand {
+			margin-left: 0;
+		}
 	}
 }
