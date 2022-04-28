@@ -1,0 +1,12 @@
+- Họ tên thành viên:
+	+ Nguyễn Trọng Kha
+	+ Nguyễn Trần Tuấn Minh
+- Nội dung đã làm: https://wp.w3layouts.com/corpvision/
+	+Nguyễn Trọng Kha: about-page, service-page, error-page
+	+ Nguyễn Trần Tuấn Minh: home-page, blog-post-page, contact-page
+- Link github nhóm:
+	+ https://github.com/FE71/corpvision-web
+- Link youtue demo:
+	+ 
+- Link Web với vercel: 
+	+ https://project-corpvision.vercel.app/
