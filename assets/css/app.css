@@ -669,11 +669,17 @@ html {
   .hero {
     height: 325px;
   }
+  .hero .hero-title {
+    margin-top: 1.5rem;
+  }
 }
 
 @media screen and (min-width: 991.98px) {
   .hero {
     height: 390px;
+  }
+  .hero .hero-title {
+    margin-top: 3rem;
   }
 }
 
