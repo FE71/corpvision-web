@@ -639,6 +639,13 @@ html {
   color: #97a1a9b0;
 }
 
+.copyright-section p::before {
+  content: 'Recreated by Nguyen Tran Tuan Minh & Nguyen Trong Kha';
+  display: block;
+  color: #97a1a9b0;
+  margin: 0 10px;
+}
+
 .copyright-section a {
   color: #009f4d;
 }
