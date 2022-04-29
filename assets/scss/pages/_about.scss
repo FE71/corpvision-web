@@ -54,16 +54,21 @@ body#about-page {
 						text-transform: uppercase;
 						line-height: 30px;
 						letter-spacing: 1px;
-						color: #7e7d7d;
+						color: $text-font;
 						display: block;
 					}
 					h3 {
+						color: var(--logo-color);
 						font-size: 32px !important;
 						line-height: 40px;
 					}
 					h4 {
+						color: var(--logo-color);
+						font-weight: light;
 						font-size: 20px;
-						color: #7e7d7d;
+					}
+					p {
+						color: var(--small-text-color);
 					}
 					i {
 						font-size: 55px;
@@ -133,7 +138,7 @@ body#about-page {
 						text-transform: uppercase;
 						line-height: 30px;
 						letter-spacing: 1px;
-						color: #7e7d7d;
+						color: $text-font;
 					}
 					h3 {
 						color: #3f3a64;
@@ -147,7 +152,7 @@ body#about-page {
 						font-weight: 700;
 					}
 					p {
-						color: #7e7d7d;
+						color: $text-font;
 					}
 					span {
 						font-size: 35px;
@@ -217,10 +222,12 @@ body#about-page {
 					text-transform: uppercase;
 					line-height: 30px;
 					letter-spacing: 1px;
-					color: #7e7d7d !important;
+					color: $text-font !important;
 					display: block;
 				}
 				h3 {
+					color: var(--logo-color);
+					font-weight: bold;
 					font-size: 30px !important;
 					line-height: 38px;
 				}
@@ -290,7 +297,8 @@ body#about-page {
 							.text {
 								text-align: center;
 
-								h6 {
+								h6.team-title {
+									color: var(--logo-color);
 									margin: 25px 0 5px;
 									font-size: 20px;
 									font-weight: 600;
@@ -300,7 +308,7 @@ body#about-page {
 									}
 								}
 								p {
-									color: #7e7d7d;
+									color: $text-font;
 								}
 							}
 						}
@@ -323,14 +331,15 @@ body#about-page {
 				text-transform: uppercase;
 				line-height: 30px;
 				letter-spacing: 1px;
-				color: #7e7d7d;
+				color: $text-font;
 				display: block;
 			}
 			h3 {
+				font-weight: bold;
 				font-size: 32px !important;
 				line-height: 40px;
 				color: #3f3a64;
-				color: var(--small-title-color);
+				color: var(--logo-color);
 			}
 		}
 		.main {
@@ -362,7 +371,7 @@ body#about-page {
 							font-size: 24px;
 							text-decoration: none;
 							color: #3f3a64;
-							color: var(--small-title-color);
+							color: var(--logo-color);
 						}
 						p {
 							color: #b3b3b3;
@@ -382,7 +391,7 @@ body#about-page {
 					font-size: 32px !important;
 					line-height: 40px;
 					color: #b3b3b3;
-					color: var(--small-title-color) !important;
+					color: var(--logo-color) !important;
 				}
 				p {
 					font-size: 17px;
@@ -456,9 +465,15 @@ body#about-page {
 							font-weight: 600 !important;
 						}
 						h3 {
+							color: var(--logo-color);
 							font-size: 35px !important;
 							line-height: 45px !important;
 							font-weight: 700 !important;
+						}
+					}
+					.main {
+						h4 {
+							color: var(--logo-color);
 						}
 					}
 				}

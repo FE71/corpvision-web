@@ -1614,13 +1614,19 @@ body#about-page .introduction .container .row .item2 h5 {
 }
 
 body#about-page .introduction .container .row .item2 h3 {
+  color: var(--logo-color);
   font-size: 32px !important;
   line-height: 40px;
 }
 
 body#about-page .introduction .container .row .item2 h4 {
+  color: var(--logo-color);
+  font-weight: light;
   font-size: 20px;
-  color: #7e7d7d;
+}
+
+body#about-page .introduction .container .row .item2 p {
+  color: var(--small-text-color);
 }
 
 body#about-page .introduction .container .row .item2 i {
@@ -1804,6 +1810,8 @@ body#about-page .teams .container .header h5 {
 }
 
 body#about-page .teams .container .header h3 {
+  color: var(--logo-color);
+  font-weight: bold;
   font-size: 30px !important;
   line-height: 38px;
 }
@@ -1896,14 +1904,15 @@ body#about-page .teams .container .main .row .col .item .text {
   text-align: center;
 }
 
-body#about-page .teams .container .main .row .col .item .text h6 {
+body#about-page .teams .container .main .row .col .item .text h6.team-title {
+  color: var(--logo-color);
   margin: 25px 0 5px;
   font-size: 20px;
   font-weight: 600;
   cursor: pointer;
 }
 
-body#about-page .teams .container .main .row .col .item .text h6:hover {
+body#about-page .teams .container .main .row .col .item .text h6.team-title:hover {
   color: #009f4d;
 }
 
@@ -1934,10 +1943,11 @@ body#about-page .reason .header h5 {
 }
 
 body#about-page .reason .header h3 {
+  font-weight: bold;
   font-size: 32px !important;
   line-height: 40px;
   color: #3f3a64;
-  color: var(--small-title-color);
+  color: var(--logo-color);
 }
 
 body#about-page .reason .main {
@@ -1977,7 +1987,7 @@ body#about-page .reason .main .row .item .text a {
   font-size: 24px;
   text-decoration: none;
   color: #3f3a64;
-  color: var(--small-title-color);
+  color: var(--logo-color);
 }
 
 body#about-page .reason .main .row .item .text p {
@@ -1999,7 +2009,7 @@ body#about-page .talk .container .text h3 {
   font-size: 32px !important;
   line-height: 40px;
   color: #b3b3b3;
-  color: var(--small-title-color) !important;
+  color: var(--logo-color) !important;
 }
 
 body#about-page .talk .container .text p {
@@ -2048,9 +2058,13 @@ body#about-page .talk .container .button button i {
     font-weight: 600 !important;
   }
   body#about-page .design .container .main-d .header h3 {
+    color: var(--logo-color);
     font-size: 35px !important;
     line-height: 45px !important;
     font-weight: 700 !important;
+  }
+  body#about-page .design .container .main-d .main h4 {
+    color: var(--logo-color);
   }
   body#about-page .design .container .image-d {
     width: 40% !important;
