@@ -259,17 +259,16 @@
 		font-size: 54px;
 	}
 
-	.search,
-	.day {
-		position: inherit;
-		top: unset;
-		right: unset;
-		margin-right: 1rem;
-	}
-
 	.navbar {
 		padding: 0 10%;
+		.search {
+			right: 15%;
+		}
+		.day {
+			right: 12%;
+		}
 		.navbar-brand {
+			position: absolute;
 			margin-left: 0;
 		}
 	}

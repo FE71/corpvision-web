@@ -575,17 +575,17 @@ html {
   #search-input {
     font-size: 54px;
   }
-  .search,
-  .day {
-    position: inherit;
-    top: unset;
-    right: unset;
-    margin-right: 1rem;
-  }
   .navbar {
     padding: 0 10%;
   }
+  .navbar .search {
+    right: 15%;
+  }
+  .navbar .day {
+    right: 12%;
+  }
   .navbar .navbar-brand {
+    position: absolute;
     margin-left: 0;
   }
 }
