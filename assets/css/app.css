@@ -2354,52 +2354,68 @@ body#service-page .solution .main .item.text a:hover {
   }
 }
 
+body#error-page {
+  /* pc responsive */
+}
+
 body#error-page .error-page {
   margin-top: 3rem;
 }
 
-body#error-page .error-page .row .item {
+body#error-page .error-page .row .item-left {
+  max-width: 420px;
+}
+
+body#error-page .error-page .row .item-left img {
+  max-width: 80%;
+}
+
+body#error-page .error-page .row .item-right {
+  max-width: 420px;
   height: 100%;
 }
 
-body#error-page .error-page .row .item img {
-  height: 100%;
-  width: 50%;
-}
-
-body#error-page .error-page .row .item h3 {
+body#error-page .error-page .row .item-right h3 {
   font-size: 80px;
   color: #009f4d;
 }
 
-body#error-page .error-page .row .item h5 {
+body#error-page .error-page .row .item-right h5 {
   font-size: 22px;
   line-height: 34px;
 }
 
-body#error-page .error-page .row .item p {
+body#error-page .error-page .row .item-right p {
   font-size: 17px;
   line-height: 27px;
   color: #666;
 }
 
-body#error-page .error-page .row .item a {
+body#error-page .error-page .row .item-right a {
   text-decoration: none;
   font-weight: 600;
   font-size: larger;
   color: #3f3a64;
 }
 
-/* pc responsive */
 @media (min-width: 991.98px) {
-  /* pc responsive header */
-  .error-page h3 {
+  body#error-page {
+    /* pc responsive header */
+    /* end of responsive */
+  }
+  body#error-page .error-page .row .item-left {
+    margin-left: auto;
+    margin-right: 0;
+  }
+  body#error-page .error-page .row .item-left img {
+    max-width: 80%;
+  }
+  body#error-page .error-page .row .item-right h3 {
     font-size: 120px !important;
   }
-  .error-page h5 {
+  body#error-page .error-page .row .item-right h5 {
     font-size: 26px !important;
   }
-  /* end of responsive */
 }
 
 /* edit for showcase using light gallery */
