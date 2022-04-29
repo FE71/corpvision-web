@@ -1542,6 +1542,10 @@ body#contact-page .contact-form .project-form button {
 
 body#about-page {
   background-color: var(--bg-secondary-color-2);
+  /* for smaller device  */
+  /* mobile responsive */
+  /* tablet responsive */
+  /* pc responsive */
 }
 
 body#about-page .introduction {
@@ -1952,6 +1956,15 @@ body#about-page .reason .main .row .item .icon {
   height: 50%;
 }
 
+body#about-page .reason .main .row .item .icon .fa {
+  border: 1px solid transparent;
+}
+
+body#about-page .reason .main .row .item .icon .fa.fa-cogs {
+  color: #213364;
+  border-color: #213364;
+}
+
 body#about-page .reason .main .row .item .icon span {
   padding: 25px;
   font-size: 25px;
@@ -1993,7 +2006,7 @@ body#about-page .talk .container .text p {
   font-size: 17px;
   line-height: 27px;
   color: #b3b3b3;
-  opacity: .8;
+  opacity: 0.8;
   margin-top: 1rem;
 }
 
@@ -2010,51 +2023,47 @@ body#about-page .talk .container .button button i {
   padding-left: 5px;
 }
 
-/* for smaller device  */
-/* mobile responsive */
 @media (min-width: 575.98px) {
-  .teams .main .row {
+  body#about-page .teams .main .row {
     -ms-grid-columns: 1fr 1fr;
         grid-template-columns: 1fr 1fr;
   }
 }
 
-/* tablet responsive */
-/* pc responsive */
 @media (min-width: 991.98px) {
-  .introduction .container .item .infor-box {
+  body#about-page .introduction .container .item .infor-box {
     bottom: 0 !important;
   }
-  .design .container .main-d {
+  body#about-page .design .container .main-d {
     width: 60% !important;
   }
-  .design .container .main-d .header h5 {
+  body#about-page .design .container .main-d .header h5 {
     font-size: 14px !important;
     font-weight: 600 !important;
   }
-  .design .container .main-d .header h3 {
+  body#about-page .design .container .main-d .header h3 {
     font-size: 35px !important;
     line-height: 45px !important;
     font-weight: 700 !important;
   }
-  .design .container .image-d {
+  body#about-page .design .container .image-d {
     width: 40% !important;
   }
-  .video .text {
+  body#about-page .video .text {
     padding: 7% 20% !important;
   }
-  .teams .main .row {
+  body#about-page .teams .main .row {
     -ms-grid-columns: 1fr 1fr 1fr 1fr;
         grid-template-columns: 1fr 1fr 1fr 1fr;
   }
-  .talk .container {
+  body#about-page .talk .container {
     -ms-grid-columns: 60% 40% !important;
         grid-template-columns: 60% 40% !important;
   }
-  .talk .container h3 {
+  body#about-page .talk .container h3 {
     color: #3f3a64 !important;
   }
-  .talk .container .button {
+  body#about-page .talk .container .button {
     padding-left: 40% !important;
   }
 }
