@@ -422,6 +422,17 @@ body#about-page {
 
 	/* tablet responsive */
 	@media (min-width: 767.98px) {
+		.reason {
+			.main {
+				.row {
+					.item {
+						.icon {
+							margin-right: 60px;
+						}
+					}
+				}
+			}
+		}
 	}
 
 	/* pc responsive */

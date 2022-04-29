@@ -2030,6 +2030,12 @@ body#about-page .talk .container .button button i {
   }
 }
 
+@media (min-width: 767.98px) {
+  body#about-page .reason .main .row .item .icon {
+    margin-right: 60px;
+  }
+}
+
 @media (min-width: 991.98px) {
   body#about-page .introduction .container .item .infor-box {
     bottom: 0 !important;
