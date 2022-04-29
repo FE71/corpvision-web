@@ -1933,6 +1933,7 @@ body#about-page .reason .header h3 {
   font-size: 32px !important;
   line-height: 40px;
   color: #3f3a64;
+  color: var(--small-title-color);
 }
 
 body#about-page .reason .main {
@@ -1963,6 +1964,7 @@ body#about-page .reason .main .row .item .text a {
   font-size: 24px;
   text-decoration: none;
   color: #3f3a64;
+  color: var(--small-title-color);
 }
 
 body#about-page .reason .main .row .item .text p {
@@ -1984,6 +1986,7 @@ body#about-page .talk .container .text h3 {
   font-size: 32px !important;
   line-height: 40px;
   color: #b3b3b3;
+  color: var(--small-title-color) !important;
 }
 
 body#about-page .talk .container .text p {
