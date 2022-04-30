@@ -394,10 +394,6 @@ html {
   background-color: var(--bg-color) !important;
 }
 
-#site-header.scroll.navbar {
-  height: 80px;
-}
-
 #site-header.scroll .navbar-nav {
   background-color: var(--bg-color);
 }
