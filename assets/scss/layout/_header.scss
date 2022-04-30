@@ -101,8 +101,8 @@
 
 #site-header.scroll {
 	background-color: var(--bg-color) !important;
-	.navbar {
-		padding: 0rem 1rem;
+	&.navbar {
+		height: 80px;
 	}
 	.navbar-nav {
 		background-color: var(--bg-color);
