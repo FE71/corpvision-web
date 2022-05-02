@@ -2106,6 +2106,7 @@ body#service-page .introduction .header h5 {
 }
 
 body#service-page .introduction .header h3 {
+  color: var(--logo-color);
   text-align: center;
   font-size: 30px !important;
   line-height: 38px;
@@ -2134,6 +2135,10 @@ body#service-page .introduction .main .item.text {
   height: 100%;
 }
 
+body#service-page .introduction .main .item.text h3 {
+  color: var(--logo-color);
+}
+
 body#service-page .introduction .main .item.img {
   width: 100%;
   height: 100%;
@@ -2148,13 +2153,13 @@ body#service-page .introduction .main .item.img p {
   padding: 0.5rem 0;
 }
 
-body#service-page .porfolio .header {
+body#service-page .portfolio .header {
   padding: 3rem 0;
   padding-bottom: 1rem;
   text-align: center;
 }
 
-body#service-page .porfolio .header h5 {
+body#service-page .portfolio .header h5 {
   font-size: 14px;
   font-weight: 600;
   text-transform: uppercase;
@@ -2164,20 +2169,21 @@ body#service-page .porfolio .header h5 {
   display: block;
 }
 
-body#service-page .porfolio .header h3 {
+body#service-page .portfolio .header h3 {
+  color: var(--logo-color);
   font-size: 25px;
   line-height: 45px;
   font-weight: 700;
 }
 
-body#service-page .porfolio .col {
+body#service-page .portfolio .col {
   height: 100%;
   margin-top: 1rem;
   background-color: #f8f9fa;
   background-color: var(--bg-secondary-color);
 }
 
-body#service-page .porfolio .col .item {
+body#service-page .portfolio .col .item {
   height: 100%;
   padding: 40px 30px;
   display: -webkit-box;
@@ -2191,34 +2197,34 @@ body#service-page .porfolio .col .item {
           align-items: top;
 }
 
-body#service-page .porfolio .col .item .icon {
+body#service-page .portfolio .col .item .icon {
   width: 10%;
   text-align: right;
 }
 
-body#service-page .porfolio .col .item .icon i {
+body#service-page .portfolio .col .item .icon i {
   font-size: 30px;
 }
 
-body#service-page .porfolio .col .item .text {
+body#service-page .portfolio .col .item .text {
   width: 90%;
   margin-left: 5px;
 }
 
-body#service-page .porfolio .col .item .text a {
+body#service-page .portfolio .col .item .text a {
   text-decoration: none;
-  color: #3f3a64;
+  color: var(--logo-color);
   font-weight: 700;
   line-height: 1.2;
   margin-bottom: 15px;
   font-size: 22px;
 }
 
-body#service-page .porfolio .col .item .text a:hover {
+body#service-page .portfolio .col .item .text a:hover {
   color: #009f4d;
 }
 
-body#service-page .porfolio .col .item .text p {
+body#service-page .portfolio .col .item .text p {
   color: #919192;
 }
 
@@ -2307,7 +2313,6 @@ body#service-page .contact .row .col .item.info .main .icon span {
 body#service-page .contact .row .col .item.info .main .text {
   font-size: 20px;
   margin-left: 25px;
-  font-weight: 700;
   color: #fff;
   margin-bottom: 1.5rem;
 }
@@ -2388,6 +2393,7 @@ body#service-page .solution .header h5 {
 }
 
 body#service-page .solution .header h3 {
+  color: var(--logo-color);
   text-align: center;
   font-size: 30px !important;
   line-height: 38px;
@@ -2409,7 +2415,7 @@ body#service-page .solution .main .col:hover {
 body#service-page .solution .main .item.text {
   background-color: #fff !important;
   background-color: var(--bg-secondary-color-1) !important;
-  color: var(--text-link-color) !important;
+  color: var(--text-link-color);
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -2435,9 +2441,10 @@ body#service-page .solution .main .item.text a {
   font-weight: 600;
   margin-top: 25px;
   display: block;
-  color: var(--heading-color);
+  color: var(--logo-color);
   text-decoration: none;
-  color: var(--text-link-color) !important;
+  -webkit-transition: all 0.4s;
+  transition: all 0.4s;
 }
 
 body#service-page .solution .main .item.text a:hover {
@@ -2456,7 +2463,7 @@ body#service-page .solution .main .item.text a:hover {
   body#service-page .contact .row .col .item.form button {
     width: 30% !important;
   }
-  .porfolio .col,
+  .portfolio .col,
   .solution .col {
     width: 32%;
     margin-left: 1.3%;
