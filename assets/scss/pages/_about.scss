@@ -70,13 +70,20 @@ body#about-page {
 						color: var(--small-text-color);
 					}
 					i {
-						font-size: 55px;
-						color: $color-dark-green;
-						opacity: 0.5;
-						transform: translate(0, 25px);
+						// font-size: 55px;
+						// color: $color-dark-green;
+						// opacity: 0.5;
 					}
-					&:nth-last-child() {
-						margin-left: 3rem;
+					.wrapper {
+						display: flex;
+						align-items: center;
+						#video-gallery {
+							a {
+								font-size: 55px;
+								color: $color-dark-green;
+								opacity: 0.8;
+							}
+						}
 					}
 				}
 			}
@@ -182,6 +189,7 @@ body#about-page {
 		background-size: cover;
 		background-repeat: no-repeat;
 		background-position: center center;
+		background-attachment: fixed;
 		height: 400px;
 		margin-top: 3rem;
 		opacity: 1;
