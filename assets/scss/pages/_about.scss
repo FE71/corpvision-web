@@ -46,7 +46,6 @@ body#about-page {
 					}
 				}
 				.item2 {
-					padding-left: 50px !important;
 					h5 {
 						padding-top: 2rem;
 						font-size: 14px;
@@ -75,6 +74,9 @@ body#about-page {
 						color: $color-dark-green;
 						opacity: 0.5;
 						transform: translate(0, 25px);
+					}
+					&:nth-last-child() {
+						margin-left: 3rem;
 					}
 				}
 			}

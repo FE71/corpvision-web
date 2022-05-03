@@ -10,21 +10,17 @@
         integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
 
     <!-- Font Awesome CDN  -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
-        integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
 
     <!-- Light Gallery CDN -->
     <link rel='stylesheet' href='https://cdn.jsdelivr.net/npm/lightgallery@2.1.3/css/lightgallery-bundle.min.css'>
-    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css'>
-
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightgallery/2.1.3/css/lg-video.min.css" />
     <!-- Animate Style CDN  -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
 
     <!-- Owl Carousel 2  -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
-        integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" />
     <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css'>
 
     <!-- Google Font -->
@@ -141,9 +137,11 @@
                                 elit. Non quae, fugiat consequatur voluptatem ad.</p>
                             <a class="btn mt-md-5 mt-4 mr-md-4 mr-3" href="#url">
                                 Read More </a>
-                            <a href="https://youtu.be/2N247cY2bEw" target="_blank">
-                                <i class="fa fa-play-circle"></i>
-                            </a>
+                            <div id="video-gallery">
+                                <a href="#" data-src="https://youtu.be/2N247cY2bEw">
+                                    <i class="fa fa-play-circle"></i>
+                                </a>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -556,6 +554,20 @@
     <!-- End footer  -->
 
     <a href="#top" class="goTop"><i class="fa fa-angle-up"></i></a>
+
+    <script src='https://cdn.jsdelivr.net/npm/lightgallery@2.1.3/lightgallery.umd.min.js'></script>
+    <script src='https://cdn.jsdelivr.net/npm/lightgallery@2.1.3/plugins/thumbnail/lg-thumbnail.umd.js'></script>
+    <script src='https://cdn.jsdelivr.net/npm/lightgallery@2.1.3/plugins/zoom/lg-zoom.umd.js'></script>
+    <script src='https://cdn.jsdelivr.net/npm/lightgallery@2.1.3/plugins/fullscreen/lg-fullscreen.min.js'></script>
+    <script src='https://cdn.jsdelivr.net/npm/lightgallery@2.1.3/plugins/autoplay/lg-autoplay.min.js'></script>
+    <script src='https://cdn.jsdelivr.net/npm/lightgallery@2.1.3/plugins/share/lg-share.min.js'></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lightgallery/2.1.3/plugins/video/lg-video.umd.min.js"></script>
+
+    <script>
+        lightGallery(document.getElementById('video-gallery'), {
+            plugins: [lgZoom, lgAutoplay, lgComment, lgFullscreen, lgHash, lgPager, lgRotate, lgShare, lgThumbnail, lgVideo]
+        });
+    </script>
 
     <script src="./assets/js/index.js"></script>
 
