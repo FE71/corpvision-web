@@ -94,10 +94,8 @@ body#about-page {
 			height: 100%;
 			// margin-left: 5px;
 			margin-top: 3rem;
-
-			background-color: #f8f9fa;
-			background-color: var(--bg-secondary-color);
 			.item {
+				background-color: var(--bg-secondary-color);
 				height: 100%;
 				padding: 40px 30px;
 				display: flex;
@@ -414,8 +412,6 @@ body#about-page {
 			.button {
 				padding: 10% 0;
 				button {
-					height: 100%;
-					width: 100% !important;
 					i {
 						padding-left: 5px;
 					}

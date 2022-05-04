@@ -171,6 +171,9 @@
 	transition: all 0.4s ease-in-out;
 	visibility: visible;
 }
+#search-checkbox:checked ~ .search-box ~ .d-flex.search ~ .day.ms-3 {
+	opacity: 0;
+}
 .exit-btn {
 	position: absolute;
 	font-size: 3rem;

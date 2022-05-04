@@ -32,8 +32,8 @@ html {
   color: white;
   font-weight: bold;
   line-height: 35px;
-  height: 52px;
-  width: 170px;
+  min-height: 52px;
+  min-width: 170px;
   border-radius: 8px;
   -webkit-transition: 0.5s;
   transition: 0.5s;
@@ -74,7 +74,8 @@ html {
 /* tablet responsive */
 @media (min-width: 767.98px) {
   .btn {
-    width: 200px;
+    padding: 0 50px;
+    min-width: 200px;
   }
 }
 
@@ -477,6 +478,10 @@ html {
   -webkit-transition: all 0.4s ease-in-out;
   transition: all 0.4s ease-in-out;
   visibility: visible;
+}
+
+#search-checkbox:checked ~ .search-box ~ .d-flex.search ~ .day.ms-3 {
+  opacity: 0;
 }
 
 .exit-btn {
@@ -1639,11 +1644,10 @@ body#about-page .introduction .container .row .item2 .wrapper #video-gallery a {
 body#about-page .slogan .col {
   height: 100%;
   margin-top: 3rem;
-  background-color: #f8f9fa;
-  background-color: var(--bg-secondary-color);
 }
 
 body#about-page .slogan .col .item {
+  background-color: var(--bg-secondary-color);
   height: 100%;
   padding: 40px 30px;
   display: -webkit-box;
@@ -2022,11 +2026,6 @@ body#about-page .talk .container .text p {
 
 body#about-page .talk .container .button {
   padding: 10% 0;
-}
-
-body#about-page .talk .container .button button {
-  height: 100%;
-  width: 100% !important;
 }
 
 body#about-page .talk .container .button button i {
