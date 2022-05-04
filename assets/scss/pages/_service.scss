@@ -190,7 +190,7 @@ body#service-page {
 					}
 				}
 				.item.form {
-					background-color: $color-light-white;
+					background-color: var(--bg-color);
 					height: 100%;
 					margin-bottom: 1.5rem;
 					border-radius: 15px;
@@ -199,7 +199,7 @@ body#service-page {
 						padding-top: 3rem;
 						font-size: 24px;
 						line-height: 32px;
-						color: $--heading-color;
+						color: var(--logo-color);
 					}
 					p {
 						margin-bottom: 1.5rem !important;
@@ -208,11 +208,13 @@ body#service-page {
 					input {
 						margin-bottom: 2rem;
 						border-radius: 5px;
-						background-color: $color-light-gray;
+						border: none;
+						background-color: var(--bg-secondary-color);
 						height: 65px !important;
 					}
 					textarea {
-						background-color: #f7f7f7;
+						border: none;
+						background-color: var(--bg-secondary-color);
 						border-radius: 5px;
 					}
 					button {
@@ -248,7 +250,6 @@ body#service-page {
 		}
 		.main {
 			.col {
-				background-color: var(--bg-color);
 				transition: all 0.4s ease;
 				border-radius: 5px;
 				&:hover {
@@ -256,8 +257,7 @@ body#service-page {
 				}
 			}
 			.item.text {
-				background-color: $color-light-white !important;
-				background-color: var(--bg-secondary-color-1) !important;
+				background-color: var(--bg-color);
 				color: var(--text-link-color);
 				display: flex;
 				flex-direction: column;

@@ -2329,7 +2329,7 @@ body#service-page .contact .row .col .item.info .main.lastMain {
 }
 
 body#service-page .contact .row .col .item.form {
-  background-color: #fff;
+  background-color: var(--bg-color);
   height: 100%;
   margin-bottom: 1.5rem;
   border-radius: 15px;
@@ -2340,7 +2340,7 @@ body#service-page .contact .row .col .item.form h3 {
   padding-top: 3rem;
   font-size: 24px;
   line-height: 32px;
-  color: #3f3a64;
+  color: var(--logo-color);
 }
 
 body#service-page .contact .row .col .item.form p {
@@ -2351,12 +2351,14 @@ body#service-page .contact .row .col .item.form p {
 body#service-page .contact .row .col .item.form input {
   margin-bottom: 2rem;
   border-radius: 5px;
-  background-color: #f7f7f7;
+  border: none;
+  background-color: var(--bg-secondary-color);
   height: 65px !important;
 }
 
 body#service-page .contact .row .col .item.form textarea {
-  background-color: #f7f7f7;
+  border: none;
+  background-color: var(--bg-secondary-color);
   border-radius: 5px;
 }
 
@@ -2394,7 +2396,6 @@ body#service-page .solution .header h3 {
 }
 
 body#service-page .solution .main .col {
-  background-color: var(--bg-color);
   -webkit-transition: all 0.4s ease;
   transition: all 0.4s ease;
   border-radius: 5px;
@@ -2406,8 +2407,7 @@ body#service-page .solution .main .col:hover {
 }
 
 body#service-page .solution .main .item.text {
-  background-color: #fff !important;
-  background-color: var(--bg-secondary-color-1) !important;
+  background-color: var(--bg-color);
   color: var(--text-link-color);
   display: -webkit-box;
   display: -ms-flexbox;
