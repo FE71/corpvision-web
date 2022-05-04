@@ -1,6 +1,7 @@
 body#error-page {
 	.error-page {
-		margin-top: 3rem;
+		background-color: var(--bg-secondary-color);
+		padding-top: 3rem;
 		.row {
 			.item-left {
 				max-width: 420px;
@@ -16,6 +17,7 @@ body#error-page {
 					color: #009f4d;
 				}
 				h5 {
+					color: var(--logo-color);
 					font-size: 22px;
 					line-height: 34px;
 				}
@@ -28,7 +30,7 @@ body#error-page {
 					text-decoration: none;
 					font-weight: 600;
 					font-size: larger;
-					color: $--heading-color;
+					color: var(--logo-color);
 				}
 			}
 		}

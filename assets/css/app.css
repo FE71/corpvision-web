@@ -2470,7 +2470,8 @@ body#error-page {
 }
 
 body#error-page .error-page {
-  margin-top: 3rem;
+  background-color: var(--bg-secondary-color);
+  padding-top: 3rem;
 }
 
 body#error-page .error-page .row .item-left {
@@ -2492,6 +2493,7 @@ body#error-page .error-page .row .item-right h3 {
 }
 
 body#error-page .error-page .row .item-right h5 {
+  color: var(--logo-color);
   font-size: 22px;
   line-height: 34px;
 }
@@ -2506,7 +2508,7 @@ body#error-page .error-page .row .item-right a {
   text-decoration: none;
   font-weight: 600;
   font-size: larger;
-  color: #3f3a64;
+  color: var(--logo-color);
 }
 
 @media (min-width: 991.98px) {
