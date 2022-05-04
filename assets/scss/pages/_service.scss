@@ -1,8 +1,7 @@
 body#service-page {
-	background-color: var(--bg-secondary-color-2);
+	background-color: var(--bg-secondary-color);
 	.introduction {
-		background-color: $color-light-gray;
-		background-color: var(--bg-secondary-color-2);
+		padding-bottom: 3rem;
 		.header {
 			h5 {
 				font-size: 14px;
@@ -26,8 +25,7 @@ body#service-page {
 			.col {
 			}
 			.item.text {
-				background-color: $color-light-white !important;
-				background-color: var(--bg-secondary-color-1) !important;
+				background-color: var(--bg-color) !important;
 				color: var(--text-link-color) !important;
 				display: flex;
 				flex-direction: column;
@@ -55,6 +53,8 @@ body#service-page {
 		}
 	}
 	.portfolio {
+		background-color: var(--bg-color);
+		padding-bottom: 3rem;
 		.header {
 			padding: 3rem 0;
 			padding-bottom: 1rem;
@@ -77,12 +77,10 @@ body#service-page {
 		}
 		.col {
 			height: 100%;
-			// margin-left: 5px;
+			margin-left: 0;
 			margin-top: 1rem;
-
-			background-color: #f8f9fa;
-			background-color: var(--bg-secondary-color);
 			.item {
+				background-color: var(--bg-secondary-color);
 				height: 100%;
 				padding: 40px 30px;
 				display: flex;
@@ -91,6 +89,7 @@ body#service-page {
 				.icon {
 					width: 10%;
 					text-align: right;
+					margin-right: 1rem;
 					i {
 						font-size: 30px;
 					}
@@ -118,7 +117,6 @@ body#service-page {
 		}
 	}
 	.contact {
-		margin-top: 3rem;
 		background-image: url(/assets/img/bg1.jpg);
 		background-repeat: no-repeat;
 		background-size: cover;
@@ -220,16 +218,13 @@ body#service-page {
 					button {
 						margin-top: 2rem;
 						width: 100% !important;
-						padding-bottom: 1.5rem;
 					}
 				}
 			}
 		}
 	}
 	.solution {
-		background-color: $color-light-gray !important;
-
-		background-color: var(--bg-secondary-color-2) !important;
+		background-color: var(--bg-secondary-color);
 		padding: 5% 0;
 		.header {
 			padding-bottom: 2rem;
@@ -253,8 +248,7 @@ body#service-page {
 		}
 		.main {
 			.col {
-				background-color: $color-light-white !important;
-				background-color: var(--bg-secondary-color) !important;
+				background-color: var(--bg-color);
 				transition: all 0.4s ease;
 				border-radius: 5px;
 				&:hover {
@@ -314,7 +308,7 @@ body#service-page {
 	}
 
 	body#service-page .contact .row .col .item.form button {
-		width: 30% !important;
+		width: fit-content !important;
 	}
 	.portfolio,
 	.solution {

@@ -33,8 +33,12 @@ html {
   font-weight: bold;
   line-height: 35px;
   min-height: 52px;
-  min-width: 170px;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
   border-radius: 8px;
+  padding-left: 30px;
+  padding-right: 30px;
   -webkit-transition: 0.5s;
   transition: 0.5s;
 }
@@ -72,13 +76,6 @@ html {
 }
 
 /* tablet responsive */
-@media (min-width: 767.98px) {
-  .btn {
-    padding: 0 50px;
-    min-width: 200px;
-  }
-}
-
 .carousel-section {
   position: relative;
 }
@@ -1187,7 +1184,7 @@ footer {
 }
 
 .subscribe {
-  background: url(../image/map.png);
+  background: url(/assets/img/map.png);
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
@@ -1209,10 +1206,6 @@ footer {
 
 .subscribe .input-sub-text {
   width: 55px;
-}
-
-.subscribe .btn-subscribe {
-  max-width: 110px;
 }
 
 .subscribe .input-sub-text,
@@ -1285,9 +1278,6 @@ footer {
     padding: 0rem 1rem;
   }
   /* responsive for footer  */
-  .btn-subscribe {
-    max-width: 100px;
-  }
   .input-sub-text {
     width: 45px;
   }
@@ -2088,12 +2078,11 @@ body#about-page .talk .container .button button i {
 }
 
 body#service-page {
-  background-color: var(--bg-secondary-color-2);
+  background-color: var(--bg-secondary-color);
 }
 
 body#service-page .introduction {
-  background-color: #f7f7f7;
-  background-color: var(--bg-secondary-color-2);
+  padding-bottom: 3rem;
 }
 
 body#service-page .introduction .header h5 {
@@ -2116,8 +2105,7 @@ body#service-page .introduction .header h3 {
 }
 
 body#service-page .introduction .main .item.text {
-  background-color: #fff !important;
-  background-color: var(--bg-secondary-color-1) !important;
+  background-color: var(--bg-color) !important;
   color: var(--text-link-color) !important;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -2156,6 +2144,11 @@ body#service-page .introduction .main .item.img p {
   padding: 0.5rem 0;
 }
 
+body#service-page .portfolio {
+  background-color: var(--bg-color);
+  padding-bottom: 3rem;
+}
+
 body#service-page .portfolio .header {
   padding: 3rem 0;
   padding-bottom: 1rem;
@@ -2181,12 +2174,12 @@ body#service-page .portfolio .header h3 {
 
 body#service-page .portfolio .col {
   height: 100%;
+  margin-left: 0;
   margin-top: 1rem;
-  background-color: #f8f9fa;
-  background-color: var(--bg-secondary-color);
 }
 
 body#service-page .portfolio .col .item {
+  background-color: var(--bg-secondary-color);
   height: 100%;
   padding: 40px 30px;
   display: -webkit-box;
@@ -2203,6 +2196,7 @@ body#service-page .portfolio .col .item {
 body#service-page .portfolio .col .item .icon {
   width: 10%;
   text-align: right;
+  margin-right: 1rem;
 }
 
 body#service-page .portfolio .col .item .icon i {
@@ -2232,7 +2226,6 @@ body#service-page .portfolio .col .item .text p {
 }
 
 body#service-page .contact {
-  margin-top: 3rem;
   background-image: url(/assets/img/bg1.jpg);
   background-repeat: no-repeat;
   background-size: cover;
@@ -2370,12 +2363,10 @@ body#service-page .contact .row .col .item.form textarea {
 body#service-page .contact .row .col .item.form button {
   margin-top: 2rem;
   width: 100% !important;
-  padding-bottom: 1.5rem;
 }
 
 body#service-page .solution {
-  background-color: #f7f7f7 !important;
-  background-color: var(--bg-secondary-color-2) !important;
+  background-color: var(--bg-secondary-color);
   padding: 5% 0;
 }
 
@@ -2403,8 +2394,7 @@ body#service-page .solution .header h3 {
 }
 
 body#service-page .solution .main .col {
-  background-color: #fff !important;
-  background-color: var(--bg-secondary-color) !important;
+  background-color: var(--bg-color);
   -webkit-transition: all 0.4s ease;
   transition: all 0.4s ease;
   border-radius: 5px;
@@ -2464,7 +2454,9 @@ body#service-page .solution .main .item.text a:hover {
     margin: 2% 1%;
   }
   body#service-page .contact .row .col .item.form button {
-    width: 30% !important;
+    width: -webkit-fit-content !important;
+    width: -moz-fit-content !important;
+    width: fit-content !important;
   }
   .portfolio .col,
   .solution .col {

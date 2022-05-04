@@ -399,7 +399,7 @@ footer {
 	background-color: #151421;
 }
 .subscribe {
-	background: url(../image/map.png);
+	background: url(/assets/img/map.png);
 	background-size: contain;
 	background-repeat: no-repeat;
 	background-position: center;
@@ -417,9 +417,6 @@ footer {
 	}
 	.input-sub-text {
 		width: 55px;
-	}
-	.btn-subscribe {
-		max-width: 110px;
 	}
 	.input-sub-text,
 	.input-subscribe,
@@ -500,9 +497,6 @@ footer {
 	}
 
 	/* responsive for footer  */
-	.btn-subscribe {
-		max-width: 100px;
-	}
 	.input-sub-text {
 		width: 45px;
 	}
